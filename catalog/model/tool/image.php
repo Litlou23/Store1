@@ -1,3 +1,4 @@
+<!-- This class returns builds the image object if you change the name of the image folder object have to make changes hare -->
 <?php
 class ModelToolImage extends Model {
 	public function resize($filename, $width, $height) {
@@ -41,9 +42,9 @@ class ModelToolImage extends Model {
 		$image_new = str_replace(' ', '%20', $image_new);  // fix bug when attach image on email (gmail.com). it is automatic changing space " " to +
 		
 		if ($this->request->server['HTTPS']) {
-			return $this->config->get('config_ssl') . 'image/' . $image_new;
+			return $this->config->get('config_ssl') . 'product_image/' . $image_new;
 		} else {
-			return $this->config->get('config_url') . 'image/' . $image_new;
+			return $this->config->get('config_url') . 'product_image/' . $image_new;
 		}
 	}
 }

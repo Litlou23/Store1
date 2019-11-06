@@ -14,7 +14,7 @@ $_['session_name']       = 'OCSESSID';
 
 // Template
 $_['template_engine']   = 'twig';
-$_['template_cache']    = true;
+$_['template_cache']    = false;
 
 // Actions
 $_['action_default']    = 'install/step_1';

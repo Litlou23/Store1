@@ -5,7 +5,8 @@ body {
 	font-size: 12px;
 	line-height: 20px;
 	width: 100%;
-	background-color: black;
+	/* background-color: black; */
+	background-image: url("/image/background/Home-Screen.jpg");
 }
 h1, h2, h3, h4, h5, h6 {
 	color: #444;

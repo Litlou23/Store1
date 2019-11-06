@@ -95,3 +95,13 @@
 2019-10-27 16:44:24 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 10
 2019-10-27 16:44:24 - PHP Notice:  Undefined variable: mysql in C:\xampp\htdocs\Shop\upload\install\controller\install\step_3.php on line 280
 2019-10-27 16:44:24 - PHP Notice:  Trying to get property 'connect_error' of non-object in C:\xampp\htdocs\Shop\upload\install\controller\install\step_3.php on line 280
+2019-11-03 5:15:49 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\upload\system\engine\loader.php on line 83
+2019-11-03 5:15:57 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\upload\system\engine\loader.php on line 83
+2019-11-05 1:49:39 - PHP Warning:  mysqli::__construct(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\upload\system\library\db\mysqli.php on line 7
+2019-11-05 1:49:39 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\upload\system\library\db\mysqli.php on line 10
+2019-11-05 1:49:39 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\upload\system\library\db\mysqli.php on line 10
+2019-11-05 1:52:36 - PHP Warning:  mysqli::__construct(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\upload\system\library\db\mysqli.php on line 7
+2019-11-05 1:52:36 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\upload\system\library\db\mysqli.php on line 10
+2019-11-05 1:52:36 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\upload\system\library\db\mysqli.php on line 10
