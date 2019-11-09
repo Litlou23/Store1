@@ -69,18 +69,23 @@ class __TwigTemplate_5ec05356f81e3df3fb62699f21c531ab033e8460481b0f58a59c9c08525
 ";
         }
         // line 21
-        echo "<script src=\"catalog/view/javascript/jquery/jquery-2.1.1.min.js\" type=\"text/javascript\"></script>
+        echo " <!-- Required meta tags -->
+ <meta charset=\"utf-8\">
+ <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">
+
+<!--Style Sheets -->
+<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">
+<link href=\"catalog/view/theme/default/stylesheet/stylesheet.css\" rel=\"stylesheet\">
 <link href=\"catalog/view/javascript/bootstrap/css/bootstrap.min.css\" rel=\"stylesheet\" media=\"screen\" />
-<script src=\"catalog/view/javascript/bootstrap/js/bootstrap.min.js\" type=\"text/javascript\"></script>
 <link href=\"catalog/view/javascript/font-awesome/css/font-awesome.min.css\" rel=\"stylesheet\" type=\"text/css\" />
 <link href=\"//fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700\" rel=\"stylesheet\" type=\"text/css\" />
-<link href=\"catalog/view/theme/default/stylesheet/stylesheet.css\" rel=\"stylesheet\">
+
 ";
-        // line 27
+        // line 32
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["styles"]) ? $context["styles"] : null));
         foreach ($context['_seq'] as $context["_key"] => $context["style"]) {
-            // line 28
+            // line 33
             echo "<link href=\"";
             echo $this->getAttribute($context["style"], "href", array());
             echo "\" type=\"text/css\" rel=\"";
@@ -93,11 +98,11 @@ class __TwigTemplate_5ec05356f81e3df3fb62699f21c531ab033e8460481b0f58a59c9c08525
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['style'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 30
+        // line 35
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["scripts"]) ? $context["scripts"] : null));
         foreach ($context['_seq'] as $context["_key"] => $context["script"]) {
-            // line 31
+            // line 36
             echo "<script src=\"";
             echo $context["script"];
             echo "\" type=\"text/javascript\"></script>
@@ -106,14 +111,14 @@ class __TwigTemplate_5ec05356f81e3df3fb62699f21c531ab033e8460481b0f58a59c9c08525
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['script'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 33
+        // line 38
         echo "<script src=\"catalog/view/javascript/common.js\" type=\"text/javascript\"></script>
 ";
-        // line 34
+        // line 39
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["links"]) ? $context["links"] : null));
         foreach ($context['_seq'] as $context["_key"] => $context["link"]) {
-            // line 35
+            // line 40
             echo "<link href=\"";
             echo $this->getAttribute($context["link"], "href", array());
             echo "\" rel=\"";
@@ -124,11 +129,11 @@ class __TwigTemplate_5ec05356f81e3df3fb62699f21c531ab033e8460481b0f58a59c9c08525
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['link'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 37
+        // line 42
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["analytics"]) ? $context["analytics"] : null));
         foreach ($context['_seq'] as $context["_key"] => $context["analytic"]) {
-            // line 38
+            // line 43
             echo $context["analytic"];
             echo "
 ";
@@ -136,28 +141,28 @@ class __TwigTemplate_5ec05356f81e3df3fb62699f21c531ab033e8460481b0f58a59c9c08525
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['analytic'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 40
+        // line 45
         echo "</head>
 <body>
 <nav id=\"top\">
   <div class=\"container\">";
-        // line 43
+        // line 48
         echo (isset($context["currency"]) ? $context["currency"] : null);
         echo "
     ";
-        // line 44
+        // line 49
         echo (isset($context["language"]) ? $context["language"] : null);
         echo "
     <div id=\"top-links\" class=\"nav pull-right\">
       <ul class=\"list-inline\">
         <li><a href=\"";
-        // line 47
+        // line 52
         echo (isset($context["contact"]) ? $context["contact"] : null);
         echo "\"><i class=\"fa fa-phone\"></i></a> <span class=\"hidden-xs hidden-sm hidden-md\">";
         echo (isset($context["telephone"]) ? $context["telephone"] : null);
         echo "</span></li>
         <li class=\"dropdown\"><a href=\"";
-        // line 48
+        // line 53
         echo (isset($context["account"]) ? $context["account"] : null);
         echo "\" title=\"";
         echo (isset($context["text_account"]) ? $context["text_account"] : null);
@@ -166,59 +171,59 @@ class __TwigTemplate_5ec05356f81e3df3fb62699f21c531ab033e8460481b0f58a59c9c08525
         echo "</span> <span class=\"caret\"></span></a>
           <ul class=\"dropdown-menu dropdown-menu-right\">
             ";
-        // line 50
+        // line 55
         if ((isset($context["logged"]) ? $context["logged"] : null)) {
-            // line 51
+            // line 56
             echo "            <li><a href=\"";
             echo (isset($context["account"]) ? $context["account"] : null);
             echo "\">";
             echo (isset($context["text_account"]) ? $context["text_account"] : null);
             echo "</a></li>
             <li><a href=\"";
-            // line 52
+            // line 57
             echo (isset($context["order"]) ? $context["order"] : null);
             echo "\">";
             echo (isset($context["text_order"]) ? $context["text_order"] : null);
             echo "</a></li>
             <li><a href=\"";
-            // line 53
+            // line 58
             echo (isset($context["transaction"]) ? $context["transaction"] : null);
             echo "\">";
             echo (isset($context["text_transaction"]) ? $context["text_transaction"] : null);
             echo "</a></li>
             <li><a href=\"";
-            // line 54
+            // line 59
             echo (isset($context["download"]) ? $context["download"] : null);
             echo "\">";
             echo (isset($context["text_download"]) ? $context["text_download"] : null);
             echo "</a></li>
             <li><a href=\"";
-            // line 55
+            // line 60
             echo (isset($context["logout"]) ? $context["logout"] : null);
             echo "\">";
             echo (isset($context["text_logout"]) ? $context["text_logout"] : null);
             echo "</a></li>
             ";
         } else {
-            // line 57
+            // line 62
             echo "            <li><a href=\"";
             echo (isset($context["register"]) ? $context["register"] : null);
             echo "\">";
             echo (isset($context["text_register"]) ? $context["text_register"] : null);
             echo "</a></li>
             <li><a href=\"";
-            // line 58
+            // line 63
             echo (isset($context["login"]) ? $context["login"] : null);
             echo "\">";
             echo (isset($context["text_login"]) ? $context["text_login"] : null);
             echo "</a></li>
             ";
         }
-        // line 60
+        // line 65
         echo "          </ul>
         </li>
         <li><a href=\"";
-        // line 62
+        // line 67
         echo (isset($context["wishlist"]) ? $context["wishlist"] : null);
         echo "\" id=\"wishlist-total\" title=\"";
         echo (isset($context["text_wishlist"]) ? $context["text_wishlist"] : null);
@@ -226,7 +231,7 @@ class __TwigTemplate_5ec05356f81e3df3fb62699f21c531ab033e8460481b0f58a59c9c08525
         echo (isset($context["text_wishlist"]) ? $context["text_wishlist"] : null);
         echo "</span></a></li>
         <li><a href=\"";
-        // line 63
+        // line 68
         echo (isset($context["shopping_cart"]) ? $context["shopping_cart"] : null);
         echo "\" title=\"";
         echo (isset($context["text_shopping_cart"]) ? $context["text_shopping_cart"] : null);
@@ -234,7 +239,7 @@ class __TwigTemplate_5ec05356f81e3df3fb62699f21c531ab033e8460481b0f58a59c9c08525
         echo (isset($context["text_shopping_cart"]) ? $context["text_shopping_cart"] : null);
         echo "</span></a></li>
         <li><a href=\"";
-        // line 64
+        // line 69
         echo (isset($context["checkout"]) ? $context["checkout"] : null);
         echo "\" title=\"";
         echo (isset($context["text_checkout"]) ? $context["text_checkout"] : null);
@@ -245,22 +250,8 @@ class __TwigTemplate_5ec05356f81e3df3fb62699f21c531ab033e8460481b0f58a59c9c08525
     </div>
   </div>
 </nav>
-<header>
-  <div class=\"container\">
-    <div class=\"row\">
-      <div class=\"col-sm-5\">";
-        // line 72
-        echo (isset($context["search"]) ? $context["search"] : null);
-        echo "</div>
-      <div class=\"col-sm-3\">";
-        // line 73
-        echo (isset($context["cart"]) ? $context["cart"] : null);
-        echo "</div>
-    </div>
-  </div>
-</header>
 ";
-        // line 77
+        // line 74
         echo (isset($context["menu"]) ? $context["menu"] : null);
         echo "
 ";
@@ -278,7 +269,7 @@ class __TwigTemplate_5ec05356f81e3df3fb62699f21c531ab033e8460481b0f58a59c9c08525
 
     public function getDebugInfo()
     {
-        return array (  264 => 77,  257 => 73,  253 => 72,  238 => 64,  230 => 63,  222 => 62,  218 => 60,  211 => 58,  204 => 57,  197 => 55,  191 => 54,  185 => 53,  179 => 52,  172 => 51,  170 => 50,  161 => 48,  155 => 47,  149 => 44,  145 => 43,  140 => 40,  132 => 38,  128 => 37,  117 => 35,  113 => 34,  110 => 33,  101 => 31,  97 => 30,  84 => 28,  80 => 27,  72 => 21,  66 => 19,  64 => 18,  58 => 16,  56 => 15,  52 => 14,  48 => 13,  37 => 7,  30 => 5,  24 => 4,  19 => 1,);
+        return array (  255 => 74,  243 => 69,  235 => 68,  227 => 67,  223 => 65,  216 => 63,  209 => 62,  202 => 60,  196 => 59,  190 => 58,  184 => 57,  177 => 56,  175 => 55,  166 => 53,  160 => 52,  154 => 49,  150 => 48,  145 => 45,  137 => 43,  133 => 42,  122 => 40,  118 => 39,  115 => 38,  106 => 36,  102 => 35,  89 => 33,  85 => 32,  72 => 21,  66 => 19,  64 => 18,  58 => 16,  56 => 15,  52 => 14,  48 => 13,  37 => 7,  30 => 5,  24 => 4,  19 => 1,);
     }
 }
 /* <!--Template Header -->*/
@@ -301,12 +292,17 @@ class __TwigTemplate_5ec05356f81e3df3fb62699f21c531ab033e8460481b0f58a59c9c08525
 /* {% if keywords %}*/
 /* <meta name="keywords" content="{{ keywords }}" />*/
 /* {% endif %}*/
-/* <script src="catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>*/
+/*  <!-- Required meta tags -->*/
+/*  <meta charset="utf-8">*/
+/*  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">*/
+/* */
+/* <!--Style Sheets -->*/
+/* <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">*/
+/* <link href="catalog/view/theme/default/stylesheet/stylesheet.css" rel="stylesheet">*/
 /* <link href="catalog/view/javascript/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" />*/
-/* <script src="catalog/view/javascript/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>*/
 /* <link href="catalog/view/javascript/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />*/
 /* <link href="//fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700" rel="stylesheet" type="text/css" />*/
-/* <link href="catalog/view/theme/default/stylesheet/stylesheet.css" rel="stylesheet">*/
+/* */
 /* {% for style in styles %}*/
 /* <link href="{{ style.href }}" type="text/css" rel="{{ style.rel }}" media="{{ style.media }}" />*/
 /* {% endfor %}*/
@@ -349,13 +345,5 @@ class __TwigTemplate_5ec05356f81e3df3fb62699f21c531ab033e8460481b0f58a59c9c08525
 /*     </div>*/
 /*   </div>*/
 /* </nav>*/
-/* <header>*/
-/*   <div class="container">*/
-/*     <div class="row">*/
-/*       <div class="col-sm-5">{{ search }}</div>*/
-/*       <div class="col-sm-3">{{ cart }}</div>*/
-/*     </div>*/
-/*   </div>*/
-/* </header>*/
 /* {{ menu }}*/
 /* */
