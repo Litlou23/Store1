@@ -16,6 +16,12 @@ if (!defined('DIR_APPLICATION')) {
 // Startup
 require_once(DIR_SYSTEM . 'startup.php');
 
+<<<<<<< Updated upstream
 // start('catalog');
 
 phpinfo();
+=======
+start('catalog');
+
+//phpinfo();
+>>>>>>> Stashed changes
