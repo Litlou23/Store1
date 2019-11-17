@@ -20,15 +20,44 @@ class __TwigTemplate_bd9358df0568406daca5761ace832359dbc24ea4ee30708c81e3cf7a8a7
         echo "
 <div id=\"common-home\" class=\"container\">
   <div class=\"row\">
-
-    <!--To do enable products to be shown when you get a chance -->
     <div id=\"content\" class=\"col-sm-12\">
-      <img src=\"/product_image/no_image.png\" alt=\"...\" class=\"simg-thumbnail\">
-      <img src=\"/product_image/no_image.png\" alt=\"...\" class=\"simg-thumbnail\">
+      <div class=\"card-deck\">
+        <div class=\"card\">
+          <img src=\"/product_image/profile.png\" class=\"card-img-top\" alt=\"...\">
+          <div class=\"card-img-overlay\">
+            <h5 class=\"card-title\">Place Holder</h5>
+          </div>
+        </div>
+        <div class=\"card\">
+          <img src=\"/product_image/profile.png\" class=\"card-img-top\" alt=\"...\">
+          <div class=\"card-img-overlay\">
+            <h5 class=\"card-title\">Place Holder</h5>
+          </div>
+        </div>
+        <div class=\"card\">
+          <img src=\"/product_image/profile.png\" class=\"card-img-top\" alt=\"...\">
+          <div class=\"card-img-overlay\">
+            <h5 class=\"card-title\">Place Holder</h5>
+          </div>
+        </div>
+        <div class=\"card\">
+          <img src=\"/product_image/profile.png\" class=\"card-img-top\" alt=\"...\">
+          <div class=\"card-img-overlay\">
+            <h5 class=\"card-title\">Place Holder</h5>
+          </div>
+        </div>
+        <div class=\"card\">
+          <img src=\"/product_image/profile.png\" class=\"card-img-top\" alt=\"...\">
+          <div class=\"card-img-overlay\">
+            <h5 class=\"card-title\">Place Holder</h5>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
 ";
-        // line 11
+        // line 40
         echo (isset($context["footer"]) ? $context["footer"] : null);
     }
 
@@ -44,17 +73,46 @@ class __TwigTemplate_bd9358df0568406daca5761ace832359dbc24ea4ee30708c81e3cf7a8a7
 
     public function getDebugInfo()
     {
-        return array (  32 => 11,  19 => 1,);
+        return array (  61 => 40,  19 => 1,);
     }
 }
 /* {{ header }}*/
 /* <div id="common-home" class="container">*/
 /*   <div class="row">*/
-/* */
-/*     <!--To do enable products to be shown when you get a chance -->*/
 /*     <div id="content" class="col-sm-12">*/
-/*       <img src="/product_image/no_image.png" alt="..." class="simg-thumbnail">*/
-/*       <img src="/product_image/no_image.png" alt="..." class="simg-thumbnail">*/
+/*       <div class="card-deck">*/
+/*         <div class="card">*/
+/*           <img src="/product_image/profile.png" class="card-img-top" alt="...">*/
+/*           <div class="card-img-overlay">*/
+/*             <h5 class="card-title">Place Holder</h5>*/
+/*           </div>*/
+/*         </div>*/
+/*         <div class="card">*/
+/*           <img src="/product_image/profile.png" class="card-img-top" alt="...">*/
+/*           <div class="card-img-overlay">*/
+/*             <h5 class="card-title">Place Holder</h5>*/
+/*           </div>*/
+/*         </div>*/
+/*         <div class="card">*/
+/*           <img src="/product_image/profile.png" class="card-img-top" alt="...">*/
+/*           <div class="card-img-overlay">*/
+/*             <h5 class="card-title">Place Holder</h5>*/
+/*           </div>*/
+/*         </div>*/
+/*         <div class="card">*/
+/*           <img src="/product_image/profile.png" class="card-img-top" alt="...">*/
+/*           <div class="card-img-overlay">*/
+/*             <h5 class="card-title">Place Holder</h5>*/
+/*           </div>*/
+/*         </div>*/
+/*         <div class="card">*/
+/*           <img src="/product_image/profile.png" class="card-img-top" alt="...">*/
+/*           <div class="card-img-overlay">*/
+/*             <h5 class="card-title">Place Holder</h5>*/
+/*           </div>*/
+/*         </div>*/
+/*       </div>*/
 /*     </div>*/
+/*   </div>*/
 /* </div>*/
 /* {{ footer }}*/

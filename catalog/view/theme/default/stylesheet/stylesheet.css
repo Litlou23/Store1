@@ -5,8 +5,7 @@ body {
 	font-size: 12px;
 	line-height: 20px;
 	width: 100%;
-	/* background-color: black; */
-	background-image: url("/image/background/Home-Screen.jpg");
+    background-color: #000; 
 }
 h1, h2, h3, h4, h5, h6 {
 	color: #444;
@@ -746,3 +745,5 @@ h2.price {
     background-image: none;
     background-color: #df5c39;
 }
+
+/*CSS for cards */
