@@ -19,47 +19,16 @@ class __TwigTemplate_bd9358df0568406daca5761ace832359dbc24ea4ee30708c81e3cf7a8a7
         echo (isset($context["header"]) ? $context["header"] : null);
         echo "
 <div id=\"common-home\" class=\"container\">
-  <div class=\"row\">";
-        // line 3
-        echo (isset($context["column_left"]) ? $context["column_left"] : null);
-        echo "
-    ";
-        // line 4
-        if (((isset($context["column_left"]) ? $context["column_left"] : null) && (isset($context["column_right"]) ? $context["column_right"] : null))) {
-            // line 5
-            echo "    ";
-            $context["class"] = "col-sm-6";
-            // line 6
-            echo "    ";
-        } elseif (((isset($context["column_left"]) ? $context["column_left"] : null) || (isset($context["column_right"]) ? $context["column_right"] : null))) {
-            // line 7
-            echo "    ";
-            $context["class"] = "col-sm-9";
-            // line 8
-            echo "    ";
-        } else {
-            // line 9
-            echo "    ";
-            $context["class"] = "col-sm-12";
-            // line 10
-            echo "    ";
-        }
-        // line 11
-        echo "    <!--To do enable products to be shown when you get a chance -->
-    <div id=\"content\" class=\"";
-        // line 12
-        echo (isset($context["class"]) ? $context["class"] : null);
-        echo "\">";
-        echo (isset($context["content_top"]) ? $context["content_top"] : null);
-        echo (isset($context["content_bottom"]) ? $context["content_bottom"] : null);
-        echo "</div>
-    ";
-        // line 13
-        echo (isset($context["column_right"]) ? $context["column_right"] : null);
-        echo "</div>
+  <div class=\"row\">
+
+    <!--To do enable products to be shown when you get a chance -->
+    <div id=\"content\" class=\"col-sm-12\">
+      <img src=\"/product_image/no_image.png\" alt=\"...\" class=\"simg-thumbnail\">
+      <img src=\"/product_image/no_image.png\" alt=\"...\" class=\"simg-thumbnail\">
+    </div>
 </div>
 ";
-        // line 15
+        // line 11
         echo (isset($context["footer"]) ? $context["footer"] : null);
     }
 
@@ -75,21 +44,17 @@ class __TwigTemplate_bd9358df0568406daca5761ace832359dbc24ea4ee30708c81e3cf7a8a7
 
     public function getDebugInfo()
     {
-        return array (  63 => 15,  58 => 13,  51 => 12,  48 => 11,  45 => 10,  42 => 9,  39 => 8,  36 => 7,  33 => 6,  30 => 5,  28 => 4,  24 => 3,  19 => 1,);
+        return array (  32 => 11,  19 => 1,);
     }
 }
 /* {{ header }}*/
 /* <div id="common-home" class="container">*/
-/*   <div class="row">{{ column_left }}*/
-/*     {% if column_left and column_right %}*/
-/*     {% set class = 'col-sm-6' %}*/
-/*     {% elseif column_left or column_right %}*/
-/*     {% set class = 'col-sm-9' %}*/
-/*     {% else %}*/
-/*     {% set class = 'col-sm-12' %}*/
-/*     {% endif %}*/
+/*   <div class="row">*/
+/* */
 /*     <!--To do enable products to be shown when you get a chance -->*/
-/*     <div id="content" class="{{ class }}">{{ content_top }}{{ content_bottom }}</div>*/
-/*     {{ column_right }}</div>*/
+/*     <div id="content" class="col-sm-12">*/
+/*       <img src="/product_image/no_image.png" alt="..." class="simg-thumbnail">*/
+/*       <img src="/product_image/no_image.png" alt="..." class="simg-thumbnail">*/
+/*     </div>*/
 /* </div>*/
 /* {{ footer }}*/
