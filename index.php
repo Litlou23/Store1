@@ -16,6 +16,7 @@ if (!defined('DIR_APPLICATION')) {
 // Startup
 require_once(DIR_SYSTEM . 'startup.php');
 
-// start('catalog');
+start('catalog');
 
-phpinfo();
+//Needed for future development
+//phpinfo();
