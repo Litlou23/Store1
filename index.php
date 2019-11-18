@@ -20,3 +20,4 @@ start('catalog');
 
 //Needed for future development
 //phpinfo();
+
