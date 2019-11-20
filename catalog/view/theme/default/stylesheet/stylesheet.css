@@ -628,7 +628,6 @@ h2.price {
 	width: 60%;
 	border: none;
 	display: inline-block;
-	float: left;
 	background-color: #eee;
 	color: #888;
 	line-height: 38px;
@@ -746,4 +745,25 @@ h2.price {
     background-color: #df5c39;
 }
 
+/*HomeS */
 /*CSS for cards */
+
+.zoom {
+	transition: transform .2s;
+	margin: 0 auto;
+  }
+  
+  .zoom:hover {
+	-ms-transform: scale(1.5); /* IE 9 */
+	-webkit-transform: scale(1.5); /* Safari 3-8 */
+	transform: scale(1.5); 
+  }
+
+  .center{
+	margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+  }
