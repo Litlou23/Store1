@@ -1,38 +1,16 @@
-{{ header }}
+{{ header }}        
 <div id="common-home" class="container">
   <div class="row">
     <div id="content" class="col-sm-12">
       <div class="card-deck">
-        <div class="card zoom ">
-          <img src="/product_image/profile.png" class="card-img-top" alt="...">
-          <div class="center">
-            <h5 class="card-title">Place Holder</h5>
-          </div>
-        </div>
+      {% for row in product.rows %}
         <div class="card zoom">
-          <img src="/product_image/profile.png" class="card-img-top" alt="...">
-          <div class="center">
-            <h5 class="card-title">Place Holder</h5>
+          <img src="http://{{domain}}/product_image/{{row['image']}}" class="card-img-top" alt="...">
+          <div class="card-img-overlay">
+            <h5 class="card-title"><a href='/index.php?route=product/product&product_id= {{ row['product_id'] }}'> {{row['name']}} </a></h5>
           </div>
         </div>
-        <div class="card zoom">
-          <img src="/product_image/profile.png" class="card-img-top" alt="...">
-          <div class="center">
-            <h5 class="card-title">Place Holder</h5>
-          </div>
-        </div>
-        <div class="card zoom">
-          <img src="/product_image/profile.png" class="card-img-top" alt="...">
-          <div class="center">
-            <h5 class="card-title">Place Holder</h5>
-          </div>
-        </div>
-        <div class="card zoom">
-          <img src="/product_image/profile.png" class="card-img-top" alt="...">
-          <div class="center">
-            <h5 class="card-title">Place Holder</h5>
-          </div>
-        </div>
+      {% endfor %}
       </div>
     </div>
   </div>

@@ -16,30 +16,46 @@ class __TwigTemplate_bd9358df0568406daca5761ace832359dbc24ea4ee30708c81e3cf7a8a7
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        $cardsHtml = '';
-
-        foreach($context['product']->rows as &$row){
-          $cardsHtml = $cardsHtml . "<div class=\"card\">
-          <img src=\"http://" . $_SERVER['HTTP_HOST'] . "/product_image/" . $row['image'] . "\" class=\"card-img-top\" alt=\"...\">
-          <div class=\"card-img-overlay\">
-            <h5 class=\"card-title\"><a href='/index.php?route=product/product&product_id=" . $row['product_id'] . "'>" . $row['name'] . "</a></h5>
-          </div>
-        </div>";
-        }
-
         echo (isset($context["header"]) ? $context["header"] : null);
-        echo "
+        echo "        
 <div id=\"common-home\" class=\"container\">
   <div class=\"row\">
     <div id=\"content\" class=\"col-sm-12\">
       <div class=\"card-deck\">
-" . $cardsHtml . "
-      </div>
+      ";
+        // line 6
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable($this->getAttribute((isset($context["product"]) ? $context["product"] : null), "rows", array()));
+        foreach ($context['_seq'] as $context["_key"] => $context["row"]) {
+            // line 7
+            echo "        <div class=\"card zoom\">
+          <img src=\"http://";
+            // line 8
+            echo (isset($context["domain"]) ? $context["domain"] : null);
+            echo "/product_image/";
+            echo $this->getAttribute($context["row"], "image", array(), "array");
+            echo "\" class=\"card-img-top\" alt=\"...\">
+          <div class=\"card-img-overlay\">
+            <h5 class=\"card-title\"><a href='/index.php?route=product/product&product_id= ";
+            // line 10
+            echo $this->getAttribute($context["row"], "product_id", array(), "array");
+            echo "'> ";
+            echo $this->getAttribute($context["row"], "name", array(), "array");
+            echo " </a></h5>
+          </div>
+        </div>
+      ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['row'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 14
+        echo "      </div>
     </div>
   </div>
 </div>
 ";
-        // line 40
+        // line 18
         echo (isset($context["footer"]) ? $context["footer"] : null);
     }
 
@@ -55,44 +71,22 @@ class __TwigTemplate_bd9358df0568406daca5761ace832359dbc24ea4ee30708c81e3cf7a8a7
 
     public function getDebugInfo()
     {
-        return array (  61 => 40,  19 => 1,);
+        return array (  59 => 18,  53 => 14,  41 => 10,  34 => 8,  31 => 7,  27 => 6,  19 => 1,);
     }
 }
-/* {{ header }}*/
+/* {{ header }}        */
 /* <div id="common-home" class="container">*/
 /*   <div class="row">*/
 /*     <div id="content" class="col-sm-12">*/
 /*       <div class="card-deck">*/
-/*         <div class="card">*/
-/*           <img src="/product_image/profile.png" class="card-img-top" alt="...">*/
+/*       {% for row in product.rows %}*/
+/*         <div class="card zoom">*/
+/*           <img src="http://{{domain}}/product_image/{{row['image']}}" class="card-img-top" alt="...">*/
 /*           <div class="card-img-overlay">*/
-/*             <h5 class="card-title">Place Holder</h5>*/
+/*             <h5 class="card-title"><a href='/index.php?route=product/product&product_id= {{ row['product_id'] }}'> {{row['name']}} </a></h5>*/
 /*           </div>*/
 /*         </div>*/
-/*         <div class="card">*/
-/*           <img src="/product_image/profile.png" class="card-img-top" alt="...">*/
-/*           <div class="card-img-overlay">*/
-/*             <h5 class="card-title">Place Holder</h5>*/
-/*           </div>*/
-/*         </div>*/
-/*         <div class="card">*/
-/*           <img src="/product_image/profile.png" class="card-img-top" alt="...">*/
-/*           <div class="card-img-overlay">*/
-/*             <h5 class="card-title">Place Holder</h5>*/
-/*           </div>*/
-/*         </div>*/
-/*         <div class="card">*/
-/*           <img src="/product_image/profile.png" class="card-img-top" alt="...">*/
-/*           <div class="card-img-overlay">*/
-/*             <h5 class="card-title">Place Holder</h5>*/
-/*           </div>*/
-/*         </div>*/
-/*         <div class="card">*/
-/*           <img src="/product_image/profile.png" class="card-img-top" alt="...">*/
-/*           <div class="card-img-overlay">*/
-/*             <h5 class="card-title">Place Holder</h5>*/
-/*           </div>*/
-/*         </div>*/
+/*       {% endfor %}*/
 /*       </div>*/
 /*     </div>*/
 /*   </div>*/
