@@ -27,7 +27,7 @@ class __TwigTemplate_62ea62458cd976193c583154b348dad5d9960ed8a8dde7c293446bf93be
       <button type=\"button\" class=\"btn btn-navbar navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-ex1-collapse\"><i class=\"fa fa-bars\"></i></button>
     </div>
     <div class=\"collapse navbar-collapse navbar-ex1-collapse\">
-      <ul class=\"nav navbar-nav\">
+      <ul class=\"nav\">
         ";
             // line 9
             $context['_parent'] = $context;
@@ -133,7 +133,7 @@ class __TwigTemplate_62ea62458cd976193c583154b348dad5d9960ed8a8dde7c293446bf93be
 /*       <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>*/
 /*     </div>*/
 /*     <div class="collapse navbar-collapse navbar-ex1-collapse">*/
-/*       <ul class="nav navbar-nav">*/
+/*       <ul class="nav">*/
 /*         {% for category in categories %}*/
 /*         {% if category.children %}*/
 /*         <li class="dropdown"><a href="{{ category.href }}" class="dropdown-toggle" data-toggle="dropdown">{{ category.name }}</a>*/

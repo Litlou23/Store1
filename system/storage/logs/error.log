@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 2019-11-09 15:41:05 - PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'rBats'@'localhost' (using password: YES) in C:\xampp\htdocs\upload\system\library\db\mysqli.php on line 7
 2019-11-09 15:41:05 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\upload\system\library\db\mysqli.php on line 10
 2019-11-09 15:41:05 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\upload\system\library\db\mysqli.php on line 10
@@ -8,3 +9,186 @@
 2019-11-09 15:41:34 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\upload\system\library\db\mysqli.php on line 10
 2019-11-09 15:41:34 - PHP Notice:  Undefined variable: mysql in C:\xampp\htdocs\upload\install\controller\install\step_3.php on line 280
 2019-11-09 15:41:34 - PHP Notice:  Trying to get property 'connect_error' of non-object in C:\xampp\htdocs\upload\install\controller\install\step_3.php on line 280
+=======
+2019-10-27 16:12:30 - PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'sockucom'@'localhost' (using password: NO) in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 7
+2019-10-27 16:12:30 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 10
+2019-10-27 16:12:30 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 10
+2019-10-27 16:12:30 - PHP Notice:  Undefined variable: mysql in C:\xampp\htdocs\Shop\upload\install\controller\install\step_3.php on line 280
+2019-10-27 16:12:30 - PHP Notice:  Trying to get property 'connect_error' of non-object in C:\xampp\htdocs\Shop\upload\install\controller\install\step_3.php on line 280
+2019-10-27 16:12:43 - PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'sockucom'@'localhost' (using password: YES) in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 7
+2019-10-27 16:12:43 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 10
+2019-10-27 16:12:43 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 10
+2019-10-27 16:12:43 - PHP Notice:  Undefined variable: mysql in C:\xampp\htdocs\Shop\upload\install\controller\install\step_3.php on line 280
+2019-10-27 16:12:43 - PHP Notice:  Trying to get property 'connect_error' of non-object in C:\xampp\htdocs\Shop\upload\install\controller\install\step_3.php on line 280
+2019-10-27 16:12:55 - PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'sockucom'@'localhost' (using password: YES) in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 7
+2019-10-27 16:12:55 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 10
+2019-10-27 16:12:55 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 10
+2019-10-27 16:12:55 - PHP Notice:  Undefined variable: mysql in C:\xampp\htdocs\Shop\upload\install\controller\install\step_3.php on line 280
+2019-10-27 16:12:55 - PHP Notice:  Trying to get property 'connect_error' of non-object in C:\xampp\htdocs\Shop\upload\install\controller\install\step_3.php on line 280
+2019-10-27 16:21:34 - PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'sockucom'@'localhost' (using password: NO) in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 7
+2019-10-27 16:21:34 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 10
+2019-10-27 16:21:34 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 10
+2019-10-27 16:21:34 - PHP Notice:  Undefined variable: mysql in C:\xampp\htdocs\Shop\upload\install\controller\install\step_3.php on line 280
+2019-10-27 16:21:34 - PHP Notice:  Trying to get property 'connect_error' of non-object in C:\xampp\htdocs\Shop\upload\install\controller\install\step_3.php on line 280
+2019-10-27 16:24:43 - PHP Warning:  mysqli::__construct(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 7
+2019-10-27 16:24:43 - PHP Warning:  mysqli::__construct(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 7
+2019-10-27 16:24:43 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 10
+2019-10-27 16:24:43 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 10
+2019-10-27 16:24:43 - PHP Notice:  Undefined variable: mysql in C:\xampp\htdocs\Shop\upload\install\controller\install\step_3.php on line 280
+2019-10-27 16:24:43 - PHP Notice:  Trying to get property 'connect_error' of non-object in C:\xampp\htdocs\Shop\upload\install\controller\install\step_3.php on line 280
+2019-10-27 16:26:45 - PHP Warning:  mysqli::__construct(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 7
+2019-10-27 16:26:45 - PHP Warning:  mysqli::__construct(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 7
+2019-10-27 16:26:45 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 10
+2019-10-27 16:26:45 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 10
+2019-10-27 16:26:45 - PHP Notice:  Undefined variable: mysql in C:\xampp\htdocs\Shop\upload\install\controller\install\step_3.php on line 280
+2019-10-27 16:26:45 - PHP Notice:  Trying to get property 'connect_error' of non-object in C:\xampp\htdocs\Shop\upload\install\controller\install\step_3.php on line 280
+2019-10-27 16:26:58 - PHP Warning:  mysqli::__construct(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 7
+2019-10-27 16:26:58 - PHP Warning:  mysqli::__construct(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 7
+2019-10-27 16:26:58 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 10
+2019-10-27 16:26:58 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 10
+2019-10-27 16:26:58 - PHP Notice:  Undefined variable: mysql in C:\xampp\htdocs\Shop\upload\install\controller\install\step_3.php on line 280
+2019-10-27 16:26:58 - PHP Notice:  Trying to get property 'connect_error' of non-object in C:\xampp\htdocs\Shop\upload\install\controller\install\step_3.php on line 280
+2019-10-27 16:28:21 - PHP Warning:  mysqli::__construct(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 7
+2019-10-27 16:28:21 - PHP Warning:  mysqli::__construct(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 7
+2019-10-27 16:28:21 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 10
+2019-10-27 16:28:21 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 10
+2019-10-27 16:28:21 - PHP Notice:  Undefined variable: mysql in C:\xampp\htdocs\Shop\upload\install\controller\install\step_3.php on line 280
+2019-10-27 16:28:21 - PHP Notice:  Trying to get property 'connect_error' of non-object in C:\xampp\htdocs\Shop\upload\install\controller\install\step_3.php on line 280
+2019-10-27 16:28:56 - PHP Warning:  mysqli::__construct(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 7
+2019-10-27 16:28:56 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 10
+2019-10-27 16:28:56 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 10
+2019-10-27 16:28:56 - PHP Notice:  Undefined variable: mysql in C:\xampp\htdocs\Shop\upload\install\controller\install\step_3.php on line 280
+2019-10-27 16:28:56 - PHP Notice:  Trying to get property 'connect_error' of non-object in C:\xampp\htdocs\Shop\upload\install\controller\install\step_3.php on line 280
+2019-10-27 16:30:36 - PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'sockucom'@'localhost' (using password: NO) in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 7
+2019-10-27 16:30:36 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 10
+2019-10-27 16:30:36 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 10
+2019-10-27 16:30:36 - PHP Notice:  Undefined variable: mysql in C:\xampp\htdocs\Shop\upload\install\controller\install\step_3.php on line 280
+2019-10-27 16:30:36 - PHP Notice:  Trying to get property 'connect_error' of non-object in C:\xampp\htdocs\Shop\upload\install\controller\install\step_3.php on line 280
+2019-10-27 16:31:59 - PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root@localhost'@'localhost' (using password: NO) in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 7
+2019-10-27 16:31:59 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 10
+2019-10-27 16:31:59 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 10
+2019-10-27 16:31:59 - PHP Notice:  Undefined variable: mysql in C:\xampp\htdocs\Shop\upload\install\controller\install\step_3.php on line 280
+2019-10-27 16:31:59 - PHP Notice:  Trying to get property 'connect_error' of non-object in C:\xampp\htdocs\Shop\upload\install\controller\install\step_3.php on line 280
+2019-10-27 16:34:08 - PHP Warning:  mysqli::__construct(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 7
+2019-10-27 16:34:08 - PHP Warning:  mysqli::__construct(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 7
+2019-10-27 16:34:08 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 10
+2019-10-27 16:34:08 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 10
+2019-10-27 16:34:08 - PHP Notice:  Undefined variable: mysql in C:\xampp\htdocs\Shop\upload\install\controller\install\step_3.php on line 280
+2019-10-27 16:34:08 - PHP Notice:  Trying to get property 'connect_error' of non-object in C:\xampp\htdocs\Shop\upload\install\controller\install\step_3.php on line 280
+2019-10-27 16:42:12 - PHP Warning:  mysqli::__construct(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 7
+2019-10-27 16:42:12 - PHP Warning:  mysqli::__construct(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 7
+2019-10-27 16:42:12 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 10
+2019-10-27 16:42:12 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 10
+2019-10-27 16:42:12 - PHP Notice:  Undefined variable: mysql in C:\xampp\htdocs\Shop\upload\install\controller\install\step_3.php on line 280
+2019-10-27 16:42:12 - PHP Notice:  Trying to get property 'connect_error' of non-object in C:\xampp\htdocs\Shop\upload\install\controller\install\step_3.php on line 280
+2019-10-27 16:42:21 - PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root@localhost'@'localhost' (using password: YES) in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 7
+2019-10-27 16:42:21 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 10
+2019-10-27 16:42:21 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 10
+2019-10-27 16:42:21 - PHP Notice:  Undefined variable: mysql in C:\xampp\htdocs\Shop\upload\install\controller\install\step_3.php on line 280
+2019-10-27 16:42:21 - PHP Notice:  Trying to get property 'connect_error' of non-object in C:\xampp\htdocs\Shop\upload\install\controller\install\step_3.php on line 280
+2019-10-27 16:42:30 - PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'sockucom'@'localhost' (using password: YES) in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 7
+2019-10-27 16:42:30 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 10
+2019-10-27 16:42:30 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 10
+2019-10-27 16:42:30 - PHP Notice:  Undefined variable: mysql in C:\xampp\htdocs\Shop\upload\install\controller\install\step_3.php on line 280
+2019-10-27 16:42:30 - PHP Notice:  Trying to get property 'connect_error' of non-object in C:\xampp\htdocs\Shop\upload\install\controller\install\step_3.php on line 280
+2019-10-27 16:43:40 - PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'test'@'localhost' (using password: YES) in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 7
+2019-10-27 16:43:40 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 10
+2019-10-27 16:43:40 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 10
+2019-10-27 16:43:40 - PHP Notice:  Undefined variable: mysql in C:\xampp\htdocs\Shop\upload\install\controller\install\step_3.php on line 280
+2019-10-27 16:43:40 - PHP Notice:  Trying to get property 'connect_error' of non-object in C:\xampp\htdocs\Shop\upload\install\controller\install\step_3.php on line 280
+2019-10-27 16:43:54 - PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'test'@'localhost' (using password: YES) in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 7
+2019-10-27 16:43:54 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 10
+2019-10-27 16:43:54 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 10
+2019-10-27 16:43:54 - PHP Notice:  Undefined variable: mysql in C:\xampp\htdocs\Shop\upload\install\controller\install\step_3.php on line 280
+2019-10-27 16:43:54 - PHP Notice:  Trying to get property 'connect_error' of non-object in C:\xampp\htdocs\Shop\upload\install\controller\install\step_3.php on line 280
+2019-10-27 16:44:24 - PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user '&amp;lt;username&amp;gt;'@'localhost' (using password: YES) in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 7
+2019-10-27 16:44:24 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 10
+2019-10-27 16:44:24 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 10
+2019-10-27 16:44:24 - PHP Notice:  Undefined variable: mysql in C:\xampp\htdocs\Shop\upload\install\controller\install\step_3.php on line 280
+2019-10-27 16:44:24 - PHP Notice:  Trying to get property 'connect_error' of non-object in C:\xampp\htdocs\Shop\upload\install\controller\install\step_3.php on line 280
+2019-11-03 5:15:49 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\upload\system\engine\loader.php on line 83
+2019-11-03 5:15:57 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\upload\system\engine\loader.php on line 83
+2019-11-05 1:49:39 - PHP Warning:  mysqli::__construct(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\upload\system\library\db\mysqli.php on line 7
+2019-11-05 1:49:39 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\upload\system\library\db\mysqli.php on line 10
+2019-11-05 1:49:39 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\upload\system\library\db\mysqli.php on line 10
+2019-11-05 1:52:36 - PHP Warning:  mysqli::__construct(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\upload\system\library\db\mysqli.php on line 7
+2019-11-05 1:52:36 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\upload\system\library\db\mysqli.php on line 10
+2019-11-05 1:52:36 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\upload\system\library\db\mysqli.php on line 10
+2019-11-12 2:59:06 - PHP Warning:  Error while sending QUERY packet. PID=12268 in C:\xampp\htdocs\upload\system\library\db\mysqli.php on line 18
+2019-11-13 4:36:35 - PHP Warning:  Error while sending QUERY packet. PID=12268 in C:\xampp\htdocs\upload\system\library\db\mysqli.php on line 18
+2019-12-01 3:50:15 - PHP Notice:  Undefined property: __TwigTemplate_bd9358df0568406daca5761ace832359dbc24ea4ee30708c81e3cf7a8a72c0d3::$db in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 18
+2019-12-01 3:52:06 - PHP Notice:  Undefined property: __TwigTemplate_bd9358df0568406daca5761ace832359dbc24ea4ee30708c81e3cf7a8a72c0d3::$db in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 18
+2019-12-01 4:53:21 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 28
+2019-12-01 4:53:21 - PHP Notice:  Trying to get property '' of non-object in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 28
+2019-12-01 4:53:21 - PHP Notice:  Undefined variable: rows in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 28
+2019-12-01 4:53:21 - PHP Notice:  Trying to get property '' of non-object in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 28
+2019-12-01 4:53:21 - PHP Notice:  Undefined variable: product_id in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 28
+2019-12-01 4:53:21 - PHP Notice:  Trying to get property '' of non-object in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 28
+2019-12-01 4:53:21 - PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 28
+2019-12-01 4:53:21 - PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 28
+2019-12-01 4:54:01 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 28
+2019-12-01 4:54:01 - PHP Notice:  Trying to get property '' of non-object in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 28
+2019-12-01 4:54:01 - PHP Notice:  Undefined variable: rows in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 28
+2019-12-01 4:54:01 - PHP Notice:  Trying to get property '' of non-object in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 28
+2019-12-01 4:54:01 - PHP Notice:  Undefined variable: product_id in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 28
+2019-12-01 4:54:01 - PHP Notice:  Trying to get property '' of non-object in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 28
+2019-12-01 4:54:01 - PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 28
+2019-12-01 4:54:01 - PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 28
+2019-12-01 4:54:21 - PHP Notice:  Trying to get property 'product' of non-object in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 28
+2019-12-01 4:54:21 - PHP Notice:  Undefined variable: rows in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 28
+2019-12-01 4:54:21 - PHP Notice:  Trying to get property '' of non-object in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 28
+2019-12-01 4:54:21 - PHP Notice:  Undefined variable: product_id in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 28
+2019-12-01 4:54:21 - PHP Notice:  Trying to get property '' of non-object in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 28
+2019-12-01 4:54:21 - PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 28
+2019-12-01 4:54:21 - PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 28
+2019-12-01 4:55:46 - PHP Notice:  Trying to get property 'product' of non-object in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 28
+2019-12-01 4:55:46 - PHP Notice:  Trying to get property 'rows' of non-object in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 28
+2019-12-01 4:55:46 - PHP Notice:  Trying to get property 'product_id' of non-object in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 28
+2019-12-01 4:55:46 - PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 28
+2019-12-01 4:55:46 - PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 28
+2019-12-01 5:02:20 - PHP Notice:  Trying to get property 'product' of non-object in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 28
+2019-12-01 5:02:20 - PHP Notice:  Trying to get property 'rows' of non-object in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 28
+2019-12-01 5:02:20 - PHP Notice:  Trying to get property 'product_id' of non-object in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 28
+2019-12-01 5:02:20 - PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 28
+2019-12-01 5:02:20 - PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 28
+2019-12-01 5:02:43 - PHP Notice:  Trying to get property 'product' of non-object in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 28
+2019-12-01 5:02:43 - PHP Notice:  Trying to get property 'rows' of non-object in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 28
+2019-12-01 5:02:43 - PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 28
+2019-12-01 5:02:43 - PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 28
+2019-12-01 5:06:33 - PHP Notice:  Trying to get property 'product' of non-object in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 28
+2019-12-01 5:06:33 - PHP Notice:  Trying to get property 'rows' of non-object in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 28
+2019-12-01 5:06:33 - PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 28
+2019-12-01 5:06:33 - PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 28
+2019-12-01 5:07:09 - PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 28
+2019-12-01 5:07:09 - PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 28
+2019-12-01 5:08:14 - PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 30
+2019-12-01 5:08:14 - PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 30
+2019-12-01 5:09:10 - PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 30
+2019-12-01 5:09:10 - PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 30
+2019-12-01 5:09:18 - PHP Notice:  Undefined offset: 0 in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 30
+2019-12-01 5:09:18 - PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 30
+2019-12-01 5:09:18 - PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 30
+2019-12-01 22:07:56 - PHP Warning:  Use of undefined constant DOMAIN_NAME - assumed 'DOMAIN_NAME' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 23
+2019-12-01 22:07:56 - PHP Warning:  Use of undefined constant DOMAIN_NAME - assumed 'DOMAIN_NAME' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 23
+2019-12-01 22:07:56 - PHP Warning:  Use of undefined constant DOMAIN_NAME - assumed 'DOMAIN_NAME' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 23
+2019-12-01 22:07:56 - PHP Warning:  Use of undefined constant DOMAIN_NAME - assumed 'DOMAIN_NAME' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 23
+2019-12-01 22:07:56 - PHP Warning:  Use of undefined constant DOMAIN_NAME - assumed 'DOMAIN_NAME' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 23
+2019-12-01 22:07:56 - PHP Warning:  Use of undefined constant DOMAIN_NAME - assumed 'DOMAIN_NAME' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 23
+2019-12-01 22:07:56 - PHP Warning:  Use of undefined constant DOMAIN_NAME - assumed 'DOMAIN_NAME' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 23
+2019-12-01 22:07:56 - PHP Warning:  Use of undefined constant DOMAIN_NAME - assumed 'DOMAIN_NAME' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 23
+2019-12-01 22:07:56 - PHP Warning:  Use of undefined constant DOMAIN_NAME - assumed 'DOMAIN_NAME' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 23
+2019-12-01 22:07:56 - PHP Warning:  Use of undefined constant DOMAIN_NAME - assumed 'DOMAIN_NAME' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 23
+2019-12-01 22:07:56 - PHP Warning:  Use of undefined constant DOMAIN_NAME - assumed 'DOMAIN_NAME' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 23
+2019-12-01 22:07:56 - PHP Warning:  Use of undefined constant DOMAIN_NAME - assumed 'DOMAIN_NAME' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 23
+2019-12-01 22:07:56 - PHP Warning:  Use of undefined constant DOMAIN_NAME - assumed 'DOMAIN_NAME' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 23
+2019-12-01 22:07:56 - PHP Warning:  Use of undefined constant DOMAIN_NAME - assumed 'DOMAIN_NAME' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 23
+2019-12-01 22:07:56 - PHP Warning:  Use of undefined constant DOMAIN_NAME - assumed 'DOMAIN_NAME' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 23
+2019-12-01 22:07:56 - PHP Warning:  Use of undefined constant DOMAIN_NAME - assumed 'DOMAIN_NAME' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 23
+2019-12-01 22:07:56 - PHP Warning:  Use of undefined constant DOMAIN_NAME - assumed 'DOMAIN_NAME' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 23
+2019-12-01 22:07:56 - PHP Warning:  Use of undefined constant DOMAIN_NAME - assumed 'DOMAIN_NAME' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 23
+2019-12-01 22:07:56 - PHP Warning:  Use of undefined constant DOMAIN_NAME - assumed 'DOMAIN_NAME' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 23
+2019-12-08 20:28:52 - PHP Warning:  Error while sending QUERY packet. PID=25304 in C:\xampp\htdocs\upload\system\library\db\mysqli.php on line 18
+>>>>>>> Stashed changes

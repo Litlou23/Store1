@@ -1,5 +1,6 @@
 {{ header }}
 <div id="common-home" class="container">
+<<<<<<< Updated upstream
   <div class="row">{{ column_left }}
     {% if column_left and column_right %}
     {% set class = 'col-sm-6' %}
@@ -10,5 +11,31 @@
     {% endif %}
     <div id="content" class="{{ class }}">{{ content_top }}{{ content_bottom }}</div>
     {{ column_right }}</div>
+=======
+  <div class="row">
+    <div id="content" class="col-sm-12">
+      <div class="card-deck">
+      {% for category in categories %}
+        {% if category.children %}
+          {% for child in category.children %}
+            <div class="card zoom">
+              <img src="http://{{domain}}/product_image/{{child['image']}}" class="card-img-top" alt="...">
+              <div class="card-img-overlay">
+                <h5 class="card-title"><a href='{{ child.href }}'> {{child['name']}} </a></h5>
+              </div>
+            </div>
+          {% endfor %}
+        {% endif %}
+        <div class="card zoom">
+          <img src="http://{{domain}}/product_image/{{category['image']}}" class="card-img-top" alt="...">
+          <div class="card-img-overlay">
+            <h5 class="card-title"><a href='{{ category.href }}'> {{category['name']}} </a></h5>
+          </div>
+        </div>
+      {% endfor %}
+      </div>
+    </div>
+  </div>
+>>>>>>> Stashed changes
 </div>
 {{ footer }}
