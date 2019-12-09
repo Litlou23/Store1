@@ -15,13 +15,10 @@ class ControllerCommonHome extends Controller {
 		$data['content_bottom'] = $this->load->controller('common/content_bottom');
 		$data['footer'] = $this->load->controller('common/footer');
 		$data['header'] = $this->load->controller('common/header');
-<<<<<<< Updated upstream
-=======
 		$data['domain'] = $_SERVER['HTTP_HOST'];
 		
 		//Adds categories to the object
 		$data['categories'] = $this->get_categories();
->>>>>>> Stashed changes
 
 		$this->response->setOutput($this->load->view('common/home', $data));
 	}
