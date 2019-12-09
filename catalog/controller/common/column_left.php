@@ -10,7 +10,8 @@ class ControllerCommonColumnLeft extends Controller {
 		}
 
 		$layout_id = 0;
-
+		
+		//To-Do figure out what to do with this, if we want some form of navigation on the side. 
 		if ($route == 'product/category' && isset($this->request->get['path'])) {
 			$this->load->model('catalog/category');
 

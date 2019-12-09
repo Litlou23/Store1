@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 2019-11-09 15:41:05 - PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'rBats'@'localhost' (using password: YES) in C:\xampp\htdocs\upload\system\library\db\mysqli.php on line 7
 2019-11-09 15:41:05 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\upload\system\library\db\mysqli.php on line 10
 2019-11-09 15:41:05 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\upload\system\library\db\mysqli.php on line 10
@@ -9,7 +8,6 @@
 2019-11-09 15:41:34 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\upload\system\library\db\mysqli.php on line 10
 2019-11-09 15:41:34 - PHP Notice:  Undefined variable: mysql in C:\xampp\htdocs\upload\install\controller\install\step_3.php on line 280
 2019-11-09 15:41:34 - PHP Notice:  Trying to get property 'connect_error' of non-object in C:\xampp\htdocs\upload\install\controller\install\step_3.php on line 280
-=======
 2019-10-27 16:12:30 - PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'sockucom'@'localhost' (using password: NO) in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 7
 2019-10-27 16:12:30 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 10
 2019-10-27 16:12:30 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\Shop\upload\system\library\db\mysqli.php on line 10
@@ -191,4 +189,3 @@
 2019-12-01 22:07:56 - PHP Warning:  Use of undefined constant DOMAIN_NAME - assumed 'DOMAIN_NAME' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 23
 2019-12-01 22:07:56 - PHP Warning:  Use of undefined constant DOMAIN_NAME - assumed 'DOMAIN_NAME' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\upload\system\storage\cache\a2\a2aebd2ed03911a17072bccb1ac2e0e7dc417cdc179aaa50f840d22abafd7bdf.php on line 23
 2019-12-08 20:28:52 - PHP Warning:  Error while sending QUERY packet. PID=25304 in C:\xampp\htdocs\upload\system\library\db\mysqli.php on line 18
->>>>>>> Stashed changes
