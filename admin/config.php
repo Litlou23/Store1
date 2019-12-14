@@ -1,11 +1,11 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://localhost/admin/');
-define('HTTP_CATALOG', 'http://localhost/');
+define('HTTP_SERVER', 'http://localhost/upload/admin/');
+define('HTTP_CATALOG', 'http://localhost/upload/');
 
 // HTTPS
-define('HTTPS_SERVER', 'http://localhost/admin/');
-define('HTTPS_CATALOG', 'http://localhost/');
+define('HTTPS_SERVER', 'http://localhost/upload/admin/');
+define('HTTPS_CATALOG', 'http://localhost/upload/');
 
 // DIR
 define('DIR_APPLICATION', 'C:/xampp/htdocs/upload/admin/');

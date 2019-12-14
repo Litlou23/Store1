@@ -43,7 +43,6 @@ class ControllerCommonContentTop extends Controller {
 
 		$data['modules'] = array();
 
-		//Gets the layout associated with this controller, needs the layout id from the the DB. 
 		$modules = $this->model_design_layout->getLayoutModules($layout_id, 'content_top');
 
 		foreach ($modules as $module) {

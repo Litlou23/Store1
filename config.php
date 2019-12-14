@@ -1,9 +1,9 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://localhost/');
+define('HTTP_SERVER', 'http://localhost/upload/');
 
 // HTTPS
-define('HTTPS_SERVER', 'https://localhost/');
+define('HTTPS_SERVER', 'https://localhost/upload/');
 
 // DIR
 define('DIR_APPLICATION', 'C:/xampp/htdocs/upload/catalog/');
