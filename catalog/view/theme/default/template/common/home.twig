@@ -3,11 +3,21 @@
   <div class="row">
     <div id="content" class="col-sm-12">
       <div class="card-deck">
-      {% for row in product.rows %}
+      {% for category in categories %}
+        {% if category.children %}
+          {% for child in category.children %}
+            <div class="card zoom">
+              <img src="http://{{domain}}/product_image/{{child['image']}}" class="card-img-top" alt="...">
+              <div class="card-img-overlay">
+                <h5 class="card-title"><a href='{{ child.href }}'> {{child['name']}} </a></h5>
+              </div>
+            </div>
+          {% endfor %}
+        {% endif %}
         <div class="card zoom">
-          <img src="http://{{domain}}/product_image/{{row['image']}}" class="card-img-top" alt="...">
+          <img src="http://{{domain}}/product_image/{{category['image']}}" class="card-img-top" alt="...">
           <div class="card-img-overlay">
-            <h5 class="card-title"><a href='/index.php?route=product/product&product_id= {{ row['product_id'] }}'> {{row['name']}} </a></h5>
+            <h5 class="card-title"><a href='{{ category.href }}'> {{category['name']}} </a></h5>
           </div>
         </div>
       {% endfor %}
