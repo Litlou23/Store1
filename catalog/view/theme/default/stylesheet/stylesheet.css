@@ -34,7 +34,7 @@ h6 {
 	font-size: 10.2px;
 }
 a {
-	color: #23a1d1;
+	color: black;
 }
 a:hover {
 	text-decoration: none;
@@ -49,7 +49,7 @@ label {
 }
 select.form-control, textarea.form-control, input[type="text"].form-control, input[type="password"].form-control, input[type="datetime"].form-control, input[type="datetime-local"].form-control, input[type="date"].form-control, input[type="month"].form-control, input[type="time"].form-control, input[type="week"].form-control, input[type="number"].form-control, input[type="email"].form-control, input[type="url"].form-control, input[type="search"].form-control, input[type="tel"].form-control, input[type="color"].form-control {
 	font-size: 12px;
-}
+	}
 .input-group input, .input-group select, .input-group .dropdown-menu, .input-group .popover {
 	font-size: 12px;
 }
@@ -195,6 +195,7 @@ div.required .control-label:before {
 #menu {
 	min-height: 40px;
 	letter-spacing: 2px;
+	border-bottom: 1px solid;
 }
 #menu .nav > li > a {
 	color:black;
@@ -521,8 +522,19 @@ footer h5 {
 	font-family: FontAwesome;
 }
 /* product list */
+.btnWishList
+{
+	background:white;
+	float: right;
+	border: 0px;
+}
+
+.product_img_heart
+{
+	height: 20px ;
+}
+
 .product-thumb {
-	border: 1px solid #ddd;
 	margin-bottom: 20px;
 	overflow: auto;
 }
@@ -553,7 +565,7 @@ footer h5 {
 }
 .product-thumb .caption {
 	padding: 0 20px;
-	min-height: 180px;
+	min-height: 100px;
 }
 .product-list .product-thumb .caption {
 	margin-left: 230px;
