@@ -5,8 +5,7 @@ body {
 	font-size: 12px;
 	line-height: 20px;
 	width: 100%;
-	/* background-color: black; */
-	background-image: url("/image/background/Home-Screen.jpg");
+	background-color:white;
 }
 h1, h2, h3, h4, h5, h6 {
 	color: #444;
@@ -35,7 +34,7 @@ h6 {
 	font-size: 10.2px;
 }
 a {
-	color: #23a1d1;
+	color: black;
 }
 a:hover {
 	text-decoration: none;
@@ -50,7 +49,7 @@ label {
 }
 select.form-control, textarea.form-control, input[type="text"].form-control, input[type="password"].form-control, input[type="datetime"].form-control, input[type="datetime-local"].form-control, input[type="date"].form-control, input[type="month"].form-control, input[type="time"].form-control, input[type="week"].form-control, input[type="number"].form-control, input[type="email"].form-control, input[type="url"].form-control, input[type="search"].form-control, input[type="tel"].form-control, input[type="color"].form-control {
 	font-size: 12px;
-}
+	}
 .input-group input, .input-group select, .input-group .dropdown-menu, .input-group .popover {
 	font-size: 12px;
 }
@@ -194,18 +193,18 @@ div.required .control-label:before {
 }
 /* menu */
 #menu {
-	background-color: #229ac8;
-	background-image: linear-gradient(to bottom, #23a1d1, #1f90bb);
-	background-repeat: repeat-x;
-	border-color: #1f90bb #1f90bb #145e7a;
 	min-height: 40px;
+	letter-spacing: 2px;
+	border-bottom: 1px solid;
 }
 #menu .nav > li > a {
-	color: #fff;
+	color:black;
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 	padding: 10px 15px 10px 15px;
 	min-height: 15px;
 	background-color: transparent;
+	font-size: 15px;
+	font-family:Akkurat,sans-serif ;
 }
 #menu .nav > li > a:hover, #menu .nav > li.open > a {
 	background-color: rgba(0, 0, 0, 0.1);
@@ -523,8 +522,19 @@ footer h5 {
 	font-family: FontAwesome;
 }
 /* product list */
+.btnWishList
+{
+	background:white;
+	float: right;
+	border: 0px;
+}
+
+.product_img_heart
+{
+	height: 20px ;
+}
+
 .product-thumb {
-	border: 1px solid #ddd;
 	margin-bottom: 20px;
 	overflow: auto;
 }
@@ -555,7 +565,7 @@ footer h5 {
 }
 .product-thumb .caption {
 	padding: 0 20px;
-	min-height: 180px;
+	min-height: 100px;
 }
 .product-list .product-thumb .caption {
 	margin-left: 230px;
@@ -629,7 +639,6 @@ h2.price {
 	width: 60%;
 	border: none;
 	display: inline-block;
-	float: left;
 	background-color: #eee;
 	color: #888;
 	line-height: 38px;
@@ -746,3 +755,44 @@ h2.price {
     background-image: none;
     background-color: #df5c39;
 }
+
+/*HomeS */
+/*CSS for cards */
+
+.zoom {
+	transition: transform .2s;
+	margin: 0 auto;
+  }
+  
+  .zoom:hover {
+	-ms-transform: scale(1.5); /* IE 9 */
+	-webkit-transform: scale(1.5); /* Safari 3-8 */
+	transform: scale(1.5); 
+  }
+
+  .center{
+	margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+  }
+
+  /*Put the card title in the bottom center of the div*/
+  .card-title{
+	  text-align: center;
+	  position: absolute;
+	  bottom: 0px;
+	  left: 0px;
+	  right: 0px;
+  }
+
+  .card-title > a{
+		font-weight: bold;
+  }
+
+  /*Limit the number of cards that appear on a single row so that there aren't 20 on 1 row*/
+  .card-deck .card{
+	flex: 1 0 15%;
+  }

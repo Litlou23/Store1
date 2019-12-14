@@ -15,6 +15,7 @@ class ControllerCommonHome extends Controller {
 		$data['content_bottom'] = $this->load->controller('common/content_bottom');
 		$data['footer'] = $this->load->controller('common/footer');
 		$data['header'] = $this->load->controller('common/header');
+		$data['product'] = $this->db->query('SELECT * FROM oc_product INNER JOIN oc_product_description ON oc_product.product_id = oc_product_description.product_id');
 
 		$this->response->setOutput($this->load->view('common/home', $data));
 	}
