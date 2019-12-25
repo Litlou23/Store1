@@ -1,11 +1,8 @@
 <?php
 class ControllerAccountNewsletter extends Controller {
 	public function index() {
-		if (!$this->customer->isLogged()) {
-			$this->session->data['redirect'] = $this->url->link('account/newsletter', '', true);
-
-			$this->response->redirect($this->url->link('account/login', '', true));
-		}
+		//Newsletter not implemented, just redirectthe user to the homepage.
+		$this->response->redirect($this->url->link('common/home', '', true));
 
 		$this->load->language('account/newsletter');
 
