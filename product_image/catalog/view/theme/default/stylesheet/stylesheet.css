@@ -626,7 +626,7 @@ h2.price {
 	}
 }
 .product-thumb .button-group button {
-	width: 60%;
+	width: 75%;
 	border: none;
 	display: inline-block;
 	float: left;
@@ -745,4 +745,9 @@ h2.price {
 .btn-info:hover, .btn-info:active, .btn-info.active, .btn-info.disabled, .btn-info[disabled] {
     background-image: none;
     background-color: #df5c39;
+}
+
+/*Fix for header getting screwed up when showing dropdown menu*/
+.list-inline>li.dropdown{
+	display: inline-block !important;
 }
