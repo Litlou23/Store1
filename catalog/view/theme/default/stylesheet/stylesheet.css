@@ -625,7 +625,6 @@ h2.price {
 .product-thumb .button-group {
 	border-top: 1px solid #ddd;
 	background-color: #eee;
-	overflow: auto;
 }
 .product-list .product-thumb .button-group {
 	border-left: 1px solid #ddd;
@@ -636,7 +635,7 @@ h2.price {
 	}
 }
 .product-thumb .button-group button {
-	width: 60%;
+	width: 75%;
 	border: none;
 	display: inline-block;
 	background-color: #eee;
@@ -802,3 +801,13 @@ h2.price {
   .card-deck .card{
 	flex: 1 0 15%;
   }
+
+  /* Fixing height for certain input fields */
+  #input-sort, #input-limit{
+	height: 30px;
+  }
+
+/*Fix for header getting screwed up when showing dropdown menu*/
+.list-inline>li.dropdown{
+	display: inline-block !important;
+}
