@@ -811,3 +811,13 @@ h2.price {
 .list-inline>li.dropdown{
 	display: inline-block !important;
 }
+
+/*Centering the product titles in the product thumbs*/
+.product-thumb>.caption>h4{
+	text-align:center;
+	margin-left:32px;	
+}
+
+.product-thumb>.caption>p{
+	text-align:center;
+}
