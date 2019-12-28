@@ -19,7 +19,7 @@ h1 {
 	font-size: 33px;
 }
 h2 {
-	font-size: 27px;
+    font-size: 2rem;
 }
 h3 {
 	font-size: 21px;
@@ -203,7 +203,8 @@ div.required .control-label:before {
 	padding: 10px 15px 10px 15px;
 	min-height: 15px;
 	background-color: transparent;
-	font-size: 15px;
+	font-size: 13px;
+	font-weight: 600px;
 	font-family:Akkurat,sans-serif ;
 }
 #menu .nav > li > a:hover, #menu .nav > li.open > a {
@@ -522,6 +523,23 @@ footer h5 {
 	font-family: FontAwesome;
 }
 /* product list */
+.filter
+{
+margin-top: 20px;
+}
+
+.filter .input-group
+{
+	width: 50%;
+	float: left;
+}
+
+.filter .form-control
+{
+	width: 50%;
+	float: left;
+}
+
 .btnWishList
 {
 	background:white;
