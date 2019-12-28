@@ -23,9 +23,6 @@
 		{% set class = 'col-sm-12' %}
 		{% endif %}
 			<div id="content" class="{{ class }}">{{ content_top }}
-			<h2>
-				{{ heading_title }}
-			</h2>
 			{# {% if thumb or description %}
 				<!--Div one-->
 				<div class="row">
@@ -45,42 +42,12 @@
 				<!--Div Three -->
 				<div
 					class="row">
-					{# <div class="col-md-3 col-sm-6">
-																														          <div class="form-group"><a href="{{ compare }}" id="compare-total" class="btn btn-link">{{ text_compare }}</a></div>
-																														        </div> #}
-					<div class="col-md-4 col-xs-6">
-						<div class="form-group input-group">
-							<label class="input-group-addon" for="input-sort">
-								{{ text_sort }}
-							</label>
-							<select id="input-sort" class="form-control" onchange="location = this.value;">
-
-
-								{% for sorts in sorts %}
-									{% if sorts.value == '%s-%s'|format(sort, order) %}
-
-
-										<option value="{{ sorts.href }}" selected="selected">
-											{{ sorts.text }}
-										</option>
-
-
-									{% else %}
-
-
-										<option value="{{ sorts.href }}">
-											{{ sorts.text }}
-										</option>
-
-
-									{% endif %}
-								{% endfor %}
-
-
-							</select>
-						</div>
+					<div class="col-md-7 col-sm-6">
+					<h2>
+				{{ heading_title }}
+					</h2>
 					</div>
-					<div class="col-md-3 col-xs-6">
+					<div class="col-md-5 col-xs-6 filter">
 						<div class="form-group input-group">
 							<label class="input-group-addon" for="input-limit">
 								{{ text_limit }}
@@ -102,6 +69,36 @@
 
 										<option value="{{ limits.href }}">
 											{{ limits.text }}
+										</option>
+
+
+									{% endif %}
+								{% endfor %}
+
+
+							</select>
+						</div>
+						<div class="form-group input-group">
+							<label class="input-group-addon" for="input-sort">
+								{{ text_sort }}
+							</label>
+							<select id="input-sort" class="form-control" onchange="location = this.value;">
+
+
+								{% for sorts in sorts %}
+									{% if sorts.value == '%s-%s'|format(sort, order) %}
+
+
+										<option value="{{ sorts.href }}" selected="selected">
+											{{ sorts.text }}
+										</option>
+
+
+									{% else %}
+
+
+										<option value="{{ sorts.href }}">
+											{{ sorts.text }}
 										</option>
 
 
