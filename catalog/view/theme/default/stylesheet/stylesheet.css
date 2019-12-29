@@ -253,8 +253,7 @@ div.required .control-label:before {
 	font-size: 16px;
 	font-weight: 700;
 	line-height: 40px;
-	color: #fff;
-	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+	margin-right: 30px;
 }
 #menu .btn-navbar {
 	font-size: 15px;
@@ -527,6 +526,7 @@ footer h5 {
 	background:white;
 	float: right;
 	border: 0px;
+	position: absolute;
 }
 
 .product_img_heart
@@ -813,11 +813,11 @@ h2.price {
 }
 
 /*Centering the product titles in the product thumbs*/
-.product-thumb>.caption>h4{
+.product-thumb>.caption>h4, .product-thumb>.caption>p{
 	text-align:center;
-	margin-left:32px;	
 }
 
-.product-thumb>.caption>p{
-	text-align:center;
+#menu>.navbar-header{
+	margin-left: auto;
+	margin-right: auto;
 }
