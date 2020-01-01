@@ -643,6 +643,7 @@ h2.price {
 .product-thumb .button-group {
 	border-top: 1px solid #ddd;
 	background-color: #eee;
+	text-align: center;
 }
 .product-list .product-thumb .button-group {
 	border-left: 1px solid #ddd;
@@ -653,7 +654,8 @@ h2.price {
 	}
 }
 .product-thumb .button-group button {
-	width: 75%;
+	width: 80%;
+	float: left;
 	border: none;
 	display: inline-block;
 	background-color: #eee;
@@ -663,9 +665,13 @@ h2.price {
 	text-align: center;
 	text-transform: uppercase;
 }
+.product-thumb .button-group.no-heart button {
+	width: 100%;
+}
 .product-thumb .button-group button + button {
 	width: 20%;
 	border-left: 1px solid #ddd;
+	float: left;
 }
 .product-thumb .button-group button:hover {
 	color: #444;
@@ -675,12 +681,14 @@ h2.price {
 }
 @media (max-width: 1200px) {
 	.product-thumb .button-group button, .product-thumb .button-group button + button {
-		width: 33.33%;
+		width: 50%;
+		float: left;
 	}
 }
 @media (max-width: 767px) {
 	.product-thumb .button-group button, .product-thumb .button-group button + button {
-		width: 33.33%;
+		width: 50%;
+		float: left;
 	}
 }
 .thumbnails {
