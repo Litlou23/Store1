@@ -7,7 +7,7 @@
         {% if category.children %}
           {% for child in category.children %}
             <div class="card zoom">
-              <img src="http://{{domain}}/product_image/{{child['image']}}" class="card-img-top" alt="...">
+              <img src="http://{{domain}}/image/{{child['image']}}" class="card-img-top" alt="...">
               <div class="card-img-overlay">
                 <h5 class="card-title"><a href='{{ child.href }}'> {{child['name']}} </a></h5>
               </div>
@@ -15,7 +15,7 @@
           {% endfor %}
         {% endif %}
         <div class="card zoom">
-          <img src="http://{{domain}}/product_image/{{category['image']}}" class="card-img-top" alt="...">
+          <img src="http://{{domain}}/image/{{category['image']}}" class="card-img-top" alt="...">
           <div class="card-img-overlay">
             <h5 class="card-title"><a href='{{ category.href }}'> {{category['name']}} </a></h5>
           </div>
