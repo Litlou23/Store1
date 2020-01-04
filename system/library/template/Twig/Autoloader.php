@@ -24,7 +24,8 @@ class Twig_Autoloader
      */
     public static function register($prepend = false)
     {
-   if (PHP_VERSION_ID < 50300) {
+
+        if (PHP_VERSION_ID < 50300) {
             spl_autoload_register(array(__CLASS__, 'autoload'));
         } else {
             spl_autoload_register(array(__CLASS__, 'autoload'), true, $prepend);
