@@ -1,6 +1,10 @@
 <?php
 class ControllerProductCompare extends Controller {
 	public function index() {
+		//Product comparison not implemented, just redirect the user to the homepage.
+		$this->response->redirect($this->url->link('common/home', '', true));
+
+		
 		$this->load->language('product/compare');
 
 		$this->load->model('catalog/product');

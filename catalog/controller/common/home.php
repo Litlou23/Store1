@@ -15,7 +15,45 @@ class ControllerCommonHome extends Controller {
 		$data['content_bottom'] = $this->load->controller('common/content_bottom');
 		$data['footer'] = $this->load->controller('common/footer');
 		$data['header'] = $this->load->controller('common/header');
+		$data['domain'] = $_SERVER['HTTP_HOST'];
+		
+		//Adds categories to the object
+		$data['categories'] = $this->get_categories();
 
 		$this->response->setOutput($this->load->view('common/home', $data));
+	}
+
+	public function get_categories(){
+		// Menu
+		$this->load->model('catalog/category');
+
+		$this->load->model('catalog/product');
+
+		$data['categories'] = array();
+
+		$categories = $this->model_catalog_category->getCategories(0);
+
+		foreach ($categories as $category) {
+			if ($category['top']) {
+				// Level 2
+				$children_data = array();
+
+				$children = $this->model_catalog_category->getCategories($category['category_id']);
+
+			    $imageresult = $this->db->query("SELECT `image` FROM `" . DB_PREFIX . "category` WHERE category_id = " . $category['category_id']);
+				$image = $imageresult->row['image'];
+
+				// Level 1
+				$data['categories'][] = array(
+					'name'     => $category['name'],
+					'children' => $children_data,
+					'column'   => $category['column'] ? $category['column'] : 1,
+					'href'     => $this->url->link('product/category', 'path=' . $category['category_id']),
+					'image'	   => $image
+				);
+			}
+		}
+
+		return $data['categories'];
 	}
 }

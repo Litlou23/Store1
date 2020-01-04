@@ -1,15 +1,28 @@
-{{ header }}
+{{ header }}        
 <div id="common-home" class="container">
-  <div class="row">{{ column_left }}
-    {% if column_left and column_right %}
-    {% set class = 'col-sm-6' %}
-    {% elseif column_left or column_right %}
-    {% set class = 'col-sm-9' %}
-    {% else %}
-    {% set class = 'col-sm-12' %}
-    {% endif %}
-    <!--To do enable products to be shown when you get a chance -->
-    <div id="content" class="{{ class }}">{{ content_top }}{{ content_bottom }}</div>
-    {{ column_right }}</div>
+  <div class="row">
+    <div id="content" class="col-sm-12">
+      <div class="card-deck">
+      {% for category in categories %}
+        {% if category.children %}
+          {% for child in category.children %}
+            <div class="card zoom">
+              <img src="http://{{domain}}/image/{{child['image']}}" class="card-img-top" alt="...">
+              <div class="card-img-overlay">
+                <h5 class="card-title"><a href='{{ child.href }}'> {{child['name']}} </a></h5>
+              </div>
+            </div>
+          {% endfor %}
+        {% endif %}
+        <div class="card zoom">
+          <img src="http://{{domain}}/image/{{category['image']}}" class="card-img-top" alt="...">
+          <div class="card-img-overlay">
+            <h5 class="card-title"><a href='{{ category.href }}'> {{category['name']}} </a></h5>
+          </div>
+        </div>
+      {% endfor %}
+      </div>
+    </div>
+  </div>
 </div>
 {{ footer }}

@@ -18,4 +18,5 @@ require_once(DIR_SYSTEM . 'startup.php');
 
 start('catalog');
 
-// phpinfo();
+//Needed for future development
+//phpinfo();

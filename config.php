@@ -8,7 +8,7 @@ define('HTTPS_SERVER', 'https://localhost/');
 // DIR
 define('DIR_APPLICATION', 'C:/xampp/htdocs/upload/catalog/');
 define('DIR_SYSTEM', 'C:/xampp/htdocs/upload/system/');
-define('DIR_IMAGE', 'C:/xampp/htdocs/upload/product_image/');
+define('DIR_IMAGE', 'C:/xampp/htdocs/upload/image/');
 define('DIR_STORAGE', DIR_SYSTEM . 'storage/');
 define('DIR_LANGUAGE', DIR_APPLICATION . 'language/');
 define('DIR_TEMPLATE', DIR_APPLICATION . 'view/theme/');
