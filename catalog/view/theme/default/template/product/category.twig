@@ -14,11 +14,15 @@
 	</ul> #}
 	<div class="row">
 		{{ column_left }}
+		{% if column_left and column_right %}
 		<div id="content" class="col-sm-12">
-			{{ content_top }}
-			<h2>
-				{{ heading_title }}
-			</h2>
+		{% set class = 'col-sm-6' %}
+		{% elseif column_left or column_right %}
+		{% set class = 'col-sm-9' %}
+		{% else %}
+		{% set class = 'col-sm-12' %}
+		{% endif %}
+			<div id="content" class="{{ class }}">{{ content_top }}
 			{# {% if thumb or description %}
 				<!--Div one-->
 				<div class="row">
@@ -38,10 +42,42 @@
 				<!--Div Three -->
 				<div
 					class="row">
-					{# <div class="col-md-3 col-sm-6">
-																														          <div class="form-group"><a href="{{ compare }}" id="compare-total" class="btn btn-link">{{ text_compare }}</a></div>
-																														        </div> #}
-					<div class="col-md-4 col-xs-6">
+					<div class="col-md-7 col-sm-6">
+					<h2>
+				{{ heading_title }}
+					</h2>
+					</div>
+					<div class="col-md-5 col-xs-6 filter">
+						<div class="form-group input-group">
+							<label class="input-group-addon" for="input-limit">
+								{{ text_limit }}
+							</label>
+							<select id="input-limit" class="form-control" onchange="location = this.value;">
+
+
+								{% for limits in limits %}
+									{% if limits.value == limit %}
+
+
+										<option value="{{ limits.href }}" selected="selected">
+											{{ limits.text }}
+										</option>
+
+
+									{% else %}
+
+
+										<option value="{{ limits.href }}">
+											{{ limits.text }}
+										</option>
+
+
+									{% endif %}
+								{% endfor %}
+
+
+							</select>
+						</div>
 						<div class="form-group input-group">
 							<label class="input-group-addon" for="input-sort">
 								{{ text_sort }}
@@ -73,38 +109,6 @@
 							</select>
 						</div>
 					</div>
-					<div class="col-md-3 col-xs-6">
-						<div class="form-group input-group">
-							<label class="input-group-addon" for="input-limit">
-								{{ text_limit }}
-							</label>
-							<select id="input-limit" class="form-control" onchange="location = this.value;">
-
-
-								{% for limits in limits %}
-									{% if limits.value == limit %}
-
-
-										<option value="{{ limits.href }}" selected="selected">
-											{{ limits.text }}
-										</option>
-
-
-									{% else %}
-
-
-										<option value="{{ limits.href }}">
-											{{ limits.text }}
-										</option>
-
-
-									{% endif %}
-								{% endfor %}
-
-
-							</select>
-						</div>
-					</div>
 				</div>
 				<!--Product Grid -->
 				<div class="row">
@@ -123,7 +127,8 @@
 										</a>
 										
                     	<button class="btnWishList" type="button" data-toggle="tooltip" title="{{ button_wishlist }}" onclick="wishlist.add('{{ product.product_id }}');">
-										<img class="product_img_heart" src="/images/heart.png" />
+										<img class="product_img_heart blank_heart" src="/images/heart.png" />
+										<img class="product_img_heart red_heart" style="display: none;" src="/images/red_heart.png" />
 									</button>
 									</h4>
 

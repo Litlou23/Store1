@@ -19,7 +19,7 @@ h1 {
 	font-size: 33px;
 }
 h2 {
-	font-size: 27px;
+    font-size: 2rem;
 }
 h3 {
 	font-size: 21px;
@@ -203,7 +203,8 @@ div.required .control-label:before {
 	padding: 10px 15px 10px 15px;
 	min-height: 15px;
 	background-color: transparent;
-	font-size: 15px;
+	font-size: 13px;
+	font-weight: 600px;
 	font-family:Akkurat,sans-serif ;
 }
 #menu .nav > li > a:hover, #menu .nav > li.open > a {
@@ -253,8 +254,7 @@ div.required .control-label:before {
 	font-size: 16px;
 	font-weight: 700;
 	line-height: 40px;
-	color: #fff;
-	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+	margin-right: 30px;
 }
 #menu .btn-navbar {
 	font-size: 15px;
@@ -522,11 +522,29 @@ footer h5 {
 	font-family: FontAwesome;
 }
 /* product list */
+.filter
+{
+margin-top: 20px;
+}
+
+.filter .input-group
+{
+	width: 50%;
+	float: left;
+}
+
+.filter .form-control
+{
+	width: 50%;
+	float: left;
+}
+
 .btnWishList
 {
 	background:white;
 	float: right;
 	border: 0px;
+	position: absolute;
 }
 
 .product_img_heart
@@ -625,7 +643,7 @@ h2.price {
 .product-thumb .button-group {
 	border-top: 1px solid #ddd;
 	background-color: #eee;
-	overflow: auto;
+	text-align: center;
 }
 .product-list .product-thumb .button-group {
 	border-left: 1px solid #ddd;
@@ -636,7 +654,8 @@ h2.price {
 	}
 }
 .product-thumb .button-group button {
-	width: 60%;
+	width: 80%;
+	float: left;
 	border: none;
 	display: inline-block;
 	background-color: #eee;
@@ -646,9 +665,13 @@ h2.price {
 	text-align: center;
 	text-transform: uppercase;
 }
+.product-thumb .button-group.no-heart button {
+	width: 100%;
+}
 .product-thumb .button-group button + button {
 	width: 20%;
 	border-left: 1px solid #ddd;
+	float: left;
 }
 .product-thumb .button-group button:hover {
 	color: #444;
@@ -658,12 +681,14 @@ h2.price {
 }
 @media (max-width: 1200px) {
 	.product-thumb .button-group button, .product-thumb .button-group button + button {
-		width: 33.33%;
+		width: 50%;
+		float: left;
 	}
 }
 @media (max-width: 767px) {
 	.product-thumb .button-group button, .product-thumb .button-group button + button {
-		width: 33.33%;
+		width: 50%;
+		float: left;
 	}
 }
 .thumbnails {
@@ -759,15 +784,21 @@ h2.price {
 /*HomeS */
 /*CSS for cards */
 
+.zoom.card{
+	margin-bottom: 20px;
+}
+
 .zoom {
 	transition: transform .2s;
-	margin: 0 auto;
+	margin-top: 0px;
+	padding-bottom: 20px;
   }
   
   .zoom:hover {
 	-ms-transform: scale(1.5); /* IE 9 */
 	-webkit-transform: scale(1.5); /* Safari 3-8 */
 	transform: scale(1.5); 
+	z-index: 500;
   }
 
   .center{
@@ -794,5 +825,25 @@ h2.price {
 
   /*Limit the number of cards that appear on a single row so that there aren't 20 on 1 row*/
   .card-deck .card{
-	flex: 1 0 15%;
+	flex: 1 0 30%;
   }
+
+  /* Fixing height for certain input fields */
+  #input-sort, #input-limit{
+	height: 30px;
+  }
+
+/*Fix for header getting screwed up when showing dropdown menu*/
+.list-inline>li.dropdown{
+	display: inline-block !important;
+}
+
+/*Centering the product titles in the product thumbs*/
+.product-thumb>.caption>h4, .product-thumb>.caption>p{
+	text-align:center;
+}
+
+#menu>.navbar-header{
+	margin-left: auto;
+	margin-right: auto;
+}

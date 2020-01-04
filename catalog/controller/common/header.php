@@ -76,8 +76,8 @@ class ControllerCommonHeader extends Controller {
 		$data['search'] = $this->load->controller('common/search');
 		$data['cart'] = $this->load->controller('common/cart');
 
-		//Only show menu if the route is defined
-		if(array_key_exists("route", $this->request->get) && $this->request->get["route"] != "")
+		//Only show menu if the route is defined and route is not the homepage aka dont show on home page
+		if(array_key_exists("route", $this->request->get) && $this->request->get["route"] != "" && $this->request->get["route"] != "common/home")
 		{
 			$data['menu'] = $this->load->controller('common/menu');
 		}

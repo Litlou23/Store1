@@ -18,7 +18,6 @@ class ControllerExtensionModuleAccount extends Controller {
 		$data['reward'] = $this->url->link('account/reward', '', true);
 		$data['return'] = $this->url->link('account/return', '', true);
 		$data['transaction'] = $this->url->link('account/transaction', '', true);
-		$data['newsletter'] = $this->url->link('account/newsletter', '', true);
 		$data['recurring'] = $this->url->link('account/recurring', '', true);
 
 		return $this->load->view('extension/module/account', $data);

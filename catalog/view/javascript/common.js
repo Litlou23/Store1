@@ -23,6 +23,17 @@ function getURLVar(key) {
 }
 
 $(document).ready(function() {
+	//When you click on btnWishList, make the heart in the box turn red
+	$(".btnWishList").on("click", function(){
+		$(this).find(".blank_heart").hide();
+		$(this).find(".red_heart").show();
+	});
+
+	//Make the glyphicon red
+	$(".wishListButton").on("click", function(){
+		$(this).find(".fa-heart").css("color", "#DD0000");
+	});
+
 	// Highlight any found errors
 	$('.text-danger').each(function() {
 		var element = $(this).parent().parent();

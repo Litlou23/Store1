@@ -1,6 +1,9 @@
 <?php
 class ControllerProductManufacturer extends Controller {
 	public function index() {
+		//temporarily disabled branding page until it can be cleaned up
+		$this->response->redirect($this->url->link('common/home', '', true));
+
 		$this->load->language('product/manufacturer');
 
 		$this->load->model('catalog/manufacturer');

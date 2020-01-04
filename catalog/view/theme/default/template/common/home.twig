@@ -1,38 +1,26 @@
-{{ header }}
+{{ header }}        
 <div id="common-home" class="container">
   <div class="row">
     <div id="content" class="col-sm-12">
       <div class="card-deck">
-        <div class="card zoom ">
-          <img src="/product_image/profile.png" class="card-img-top" alt="...">
-          <div class="center">
-            <h5 class="card-title">Place Holder</h5>
-          </div>
-        </div>
+      {% for category in categories %}
+        {% if category.children %}
+          {% for child in category.children %}
+            <div class="card zoom">
+              <img src="http://{{domain}}/image/{{child['image']}}" class="card-img-top" alt="...">
+              <div class="card-img-overlay">
+                <h5 class="card-title"><a href='{{ child.href }}'> {{child['name']}} </a></h5>
+              </div>
+            </div>
+          {% endfor %}
+        {% endif %}
         <div class="card zoom">
-          <img src="/product_image/profile.png" class="card-img-top" alt="...">
-          <div class="center">
-            <h5 class="card-title">Place Holder</h5>
+          <img src="http://{{domain}}/image/{{category['image']}}" class="card-img-top" alt="...">
+          <div class="card-img-overlay">
+            <h5 class="card-title"><a href='{{ category.href }}'> {{category['name']}} </a></h5>
           </div>
         </div>
-        <div class="card zoom">
-          <img src="/product_image/profile.png" class="card-img-top" alt="...">
-          <div class="center">
-            <h5 class="card-title">Place Holder</h5>
-          </div>
-        </div>
-        <div class="card zoom">
-          <img src="/product_image/profile.png" class="card-img-top" alt="...">
-          <div class="center">
-            <h5 class="card-title">Place Holder</h5>
-          </div>
-        </div>
-        <div class="card zoom">
-          <img src="/product_image/profile.png" class="card-img-top" alt="...">
-          <div class="center">
-            <h5 class="card-title">Place Holder</h5>
-          </div>
-        </div>
+      {% endfor %}
       </div>
     </div>
   </div>
