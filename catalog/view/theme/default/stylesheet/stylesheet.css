@@ -195,7 +195,6 @@ div.required .control-label:before {
 #menu {
 	min-height: 40px;
 	letter-spacing: 2px;
-	border-bottom: 1px solid;
 }
 #menu .nav > li > a {
 	color:black;
