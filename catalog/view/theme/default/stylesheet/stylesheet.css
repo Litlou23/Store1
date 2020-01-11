@@ -832,6 +832,20 @@ h2.price {
 	height: 30px;
   }
 
+  #input-sort{
+	  width: 150px;
+  }
+
+  #input-limit{
+	width: 80px;	  
+  }
+
+  @media (max-width: 767px) {
+	.category-title{
+		text-align: center;
+	}  
+  }
+
 /*Fix for header getting screwed up when showing dropdown menu*/
 .list-inline>li.dropdown{
 	display: inline-block !important;
