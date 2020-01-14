@@ -80,7 +80,7 @@ div.required .control-label:before {
 }
 /* top */
 #top {
-	background-color: #EEEEEE;
+	background-color: #101010;
 	border-bottom: 1px solid #e2e2e2;
 	padding: 4px 0px 3px 0;
 	margin: 0 0 20px 0;
@@ -102,8 +102,7 @@ div.required .control-label:before {
 	background-repeat: repeat-x;
 }
 #top .btn-link, #top-links li, #top-links a {
-	color: #888;
-	text-shadow: 0 1px 0 #FFF;
+	color: #f9f9f9;
 	text-decoration: none;
 }
 #top .btn-link:hover, #top-links a:hover {
@@ -339,24 +338,20 @@ footer h5 {
 }
 /* breadcrumb */
 .breadcrumb {
-	margin: 0 0 20px 0;
-	padding: 8px 0;
-	border: 1px solid #ddd;
+	margin: 0px;
+	padding: 0px;
+	background-color: white;
 }
+.breadcrumb > li::before{
+	padding: 0px !important;
+}
+
 .breadcrumb i {
 	font-size: 15px;
 }
-.breadcrumb > li {
-	text-shadow: 0 1px 0 #FFF;
-	padding: 0 20px;
-	position: relative;
-	white-space: nowrap;
-}
-.breadcrumb > li + li:before {
-	content: '';
-	padding: 0;
-}
-.breadcrumb > li:after {
+
+/* 
+/* .breadcrumb > li:after {
 	content: '';
 	display: block;
 	position: absolute;
@@ -370,7 +365,7 @@ footer h5 {
 	-moz-transform: rotate(-45deg);
 	-o-transform: rotate(-45deg);
 	transform: rotate(-45deg);
-}
+} */ */
 .pagination {
 	margin: 0;
 }
@@ -521,6 +516,19 @@ footer h5 {
 	font-family: FontAwesome;
 }
 /* product list */
+@media (min-width: 1600px){
+#product-category{
+	width: 1500px !important;
+}
+}
+
+@media (min-width: 1600px){
+	#product-category{
+		width: 1500px !important;
+		max-width: 1500px;
+	}
+	}
+
 .filter
 {
 margin-top: 20px;
@@ -829,7 +837,11 @@ h2.price {
 
   /* Fixing height for certain input fields */
   #input-sort, #input-limit{
-	height: 30px;
+	height: 32px;
+  }
+
+  #input-sort{
+	width: 100%;
   }
 
   #input-sort{
