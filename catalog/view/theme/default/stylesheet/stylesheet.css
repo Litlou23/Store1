@@ -881,3 +881,9 @@ h2.price {
 .margin-auto{
 	margin: 0 auto;
 }
+
+.wishlist-row #button-cart, .wishlist-row .btn-group{
+	/* justify-content: space-between; */
+	margin-left: 15px;
+	margin-bottom: 15px;
+}
