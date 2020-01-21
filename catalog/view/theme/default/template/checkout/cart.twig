@@ -89,24 +89,27 @@
         </div>
       </form>
       {% if modules %}
-      <h2>{{ text_next }}</h2>
-      <p>{{ text_next_choice }}</p>
-      <div class="panel-group" id="accordion"> {% for module in modules %}
-        {{ module }}
-        {% endfor %} </div>
-      {% endif %} <br />
-      <div class="row">
-        <div class="col-sm-4 col-sm-offset-8">
-          <table class="table table-bordered">
-            {% for total in totals %}
-            <tr>
-              <td class="text-right"><strong>{{ total.title }}:</strong></td>
-              <td class="text-right">{{ total.text }}</td>
-            </tr>
-            {% endfor %}
-          </table>
+        <h2>{{ text_next }}</h2>
+        <p>{{ text_next_choice }}</p>
+      {% endif %}
+        <div class="row">
+        {% if modules %}
+          <div class="panel-group col-md-8" id="accordion"> 
+          {% for module in modules %}
+            {{ module }}
+          {% endfor %} </div>
+        {% endif %}
+          <div class="col-md-4">
+            <table class="table table-bordered">
+              {% for total in totals %}
+              <tr>
+                <td class="text-right"><strong>{{ total.title }}:</strong></td>
+                <td class="text-right">{{ total.text }}</td>
+              </tr>
+              {% endfor %}
+            </table>
+          </div>
         </div>
-      </div>
       <div class="buttons clearfix">
         <div class="pull-left"><a href="{{ continue }}" class="btn btn-default">{{ button_shopping }}</a></div>
         <div class="pull-right"><a href="{{ checkout }}" class="btn btn-primary">{{ button_checkout }}</a></div>

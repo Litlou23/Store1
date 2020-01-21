@@ -21,13 +21,25 @@
         {% endif %}
         <div class="{{ class }}"> {% if thumb or images %}
           <ul class="thumbnails">
-            {% if thumb %}
-            <li><a class="thumbnail" href="{{ popup }}" title="{{ heading_title }}"><img src="{{ thumb }}" title="{{ heading_title }}" alt="{{ heading_title }}" /></a></li>
-            {% endif %}
             {% if images %}
-            {% for image in images %}
-            <li class="image-additional"><a class="thumbnail" href="{{ image.popup }}" title="{{ heading_title }}"> <img src="{{ image.thumb }}" title="{{ heading_title }}" alt="{{ heading_title }}" /></a></li>
-            {% endfor %}
+              <div class="slick-carousel">
+                {% if thumb %}
+                  <div><img class="margin-auto" src="{{ thumb }}" title="{{ heading_title }}" alt="{{ heading_title }}" /></a></div>
+                {% endif %}
+                {% for image in images %}
+                  <div><img class="margin-auto" src="{{ image.thumb }}" title="{{ heading_title }}" alt="{{ heading_title }}" /></a></div>
+                {% endfor %}
+              </div>
+              {% if thumb %}
+                <li class="image-additional"><a class="thumbnail"><img src="{{ thumb }}" title="{{ heading_title }}" alt="{{ heading_title }}" /></a></li>
+              {% endif %}
+              {% for image in images %}
+                <li class="image-additional"><a class="thumbnail"><img src="{{ image.thumb }}" title="{{ heading_title }}" alt="{{ heading_title }}" /></a></li>
+              {% endfor %}
+            {% elseif thumb %}
+              {% if thumb %}
+                <li class="image-additional"><a class="thumbnail"><img src="{{ thumb }}" title="{{ heading_title }}" alt="{{ heading_title }}" /></a></li>
+              {% endif %}
             {% endif %}
           </ul>
           {% endif %}
@@ -116,9 +128,6 @@
         {% set class = 'col-sm-4' %}
         {% endif %}
         <div class="{{ class }}">
-          <div class="btn-group">
-            <button type="button" class="wishListButton btn btn-default" data-toggle="tooltip" data-placement="top" class="btn btn-default" title="{{ button_wishlist }}" onclick="wishlist.add('{{ product_id }}');"><i class="fa fa-heart"></i></button>
-          </div>
           <h1>{{ heading_title }}</h1>
           <ul class="list-unstyled">
             {% if manufacturer %}
@@ -277,7 +286,12 @@
               <input type="text" name="quantity" value="{{ minimum }}" size="2" id="input-quantity" class="form-control" />
               <input type="hidden" name="product_id" value="{{ product_id }}" />
               <br />
-              <button type="button" id="button-cart" data-loading-text="{{ text_loading }}" class="btn btn-primary btn-lg btn-block">{{ button_cart }}</button>
+              <div class="row wishlist-row">
+                <button type="button" id="button-cart" data-loading-text="{{ text_loading }}" class="btn btn-primary btn-lg">{{ button_cart }}</button>
+                <div class="btn-group">
+                  <button type="button" class="wishListButton btn btn-lg btn-default" data-toggle="tooltip" data-placement="top" class="btn btn-lg btn-default" title="{{ button_wishlist }}" onclick="wishlist.add('{{ product_id }}');"><i class="fa fa-heart"></i> Add to Wishlist </button>
+                </div>
+              </div>
             </div>
             {% if minimum > 1 %}
             <div class="alert alert-info"><i class="fa fa-info-circle"></i> {{ text_minimum }}</div>
@@ -538,12 +552,10 @@ $('#button-review').on('click', function() {
 });
 
 $(document).ready(function() {
-	$('.thumbnails').magnificPopup({
-		type:'image',
-		delegate: 'a',
-		gallery: {
-			enabled: true
-		}
+	$('.slick-carousel').slick({
+    dots: true,
+    centerMode: true,
+    slidesToShow: 1,
 	});
 });
 </script> 
