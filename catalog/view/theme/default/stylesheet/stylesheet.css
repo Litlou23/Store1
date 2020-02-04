@@ -106,7 +106,7 @@ div.required .control-label:before {
 	text-decoration: none;
 }
 #top .btn-link:hover, #top-links a:hover {
-	color: #444;
+	color: #AAA;
 }
 #top-links .dropdown-menu a {
 	text-shadow: none;
@@ -886,4 +886,8 @@ h2.price {
 	/* justify-content: space-between; */
 	margin-left: 15px;
 	margin-bottom: 15px;
+}
+
+#top-links .dropdown-menu>li>a{
+	color: black;
 }
