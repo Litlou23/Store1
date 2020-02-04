@@ -1,0 +1,7 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/sockucom/public_html/
+    - /bin/cp -R images $DEPLOYPATH
+    - /bin/cp -R catalog $DEPLOYPATH
+    - /bin/cp -R image $DEPLOYPATH
