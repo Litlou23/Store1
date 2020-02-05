@@ -891,3 +891,7 @@ h2.price {
 #top-links .dropdown-menu>li>a{
 	color: black;
 }
+
+.slick-list img{
+	max-width: 100%;
+}

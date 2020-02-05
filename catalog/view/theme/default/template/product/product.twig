@@ -19,26 +19,26 @@
         {% else %}
         {% set class = 'col-sm-8' %}
         {% endif %}
-        <div class="{{ class }}"> {% if thumb or images %}
+        <div class="{{ class }}"> {% if popup or images %}
           <ul class="thumbnails">
             {% if images %}
               <div class="slick-carousel">
-                {% if thumb %}
-                  <div><img class="margin-auto" src="{{ thumb }}" title="{{ heading_title }}" alt="{{ heading_title }}" /></a></div>
+                {% if popup %}
+                  <div><img class="margin-auto" src="{{ popup }}" title="{{ heading_title }}" alt="{{ heading_title }}" /></a></div>
                 {% endif %}
                 {% for image in images %}
-                  <div><img class="margin-auto" src="{{ image.thumb }}" title="{{ heading_title }}" alt="{{ heading_title }}" /></a></div>
+                  <div><img class="margin-auto" src="{{ image.popup }}" title="{{ heading_title }}" alt="{{ heading_title }}" /></a></div>
                 {% endfor %}
               </div>
-              {% if thumb %}
-                <li class="image-additional"><a class="thumbnail"><img src="{{ thumb }}" title="{{ heading_title }}" alt="{{ heading_title }}" /></a></li>
+              {% if popup %}
+                <li class="image-additional"><a class="thumbnail"><img src="{{ popup }}" title="{{ heading_title }}" alt="{{ heading_title }}" /></a></li>
               {% endif %}
               {% for image in images %}
-                <li class="image-additional"><a class="thumbnail"><img src="{{ image.thumb }}" title="{{ heading_title }}" alt="{{ heading_title }}" /></a></li>
+                <li class="image-additional"><a class="thumbnail"><img src="{{ image.popup }}" title="{{ heading_title }}" alt="{{ heading_title }}" /></a></li>
               {% endfor %}
-            {% elseif thumb %}
-              {% if thumb %}
-                <li class="image-additional"><a class="thumbnail"><img src="{{ thumb }}" title="{{ heading_title }}" alt="{{ heading_title }}" /></a></li>
+            {% elseif popup %}
+              {% if popup %}
+                <li class="image-additional"><a class="thumbnail"><img src="{{ popup }}" title="{{ heading_title }}" alt="{{ heading_title }}" /></a></li>
               {% endif %}
             {% endif %}
           </ul>
