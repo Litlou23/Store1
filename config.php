@@ -20,11 +20,21 @@ define('DIR_MODIFICATION', DIR_STORAGE . 'modification/');
 define('DIR_SESSION', DIR_STORAGE . 'session/');
 define('DIR_UPLOAD', DIR_STORAGE . 'upload/');
 
-// DB
+// Localhost DB
+// define('DB_DRIVER', 'mysqli');
+// define('DB_HOSTNAME', 'mi3-ss15.a2hosting.com:2083');
+// define('DB_USERNAME', 'sockucom_ocar936');
+// define('DB_PASSWORD', 'x11Xsp].1S');
+// define('DB_DATABASE', 'sockucom_ocar936');
+// define('DB_PORT', '3306');
+// define('DB_PREFIX', 'oc_');
+
+//Live DB  settings
+//Must update cpanel to your public ipaddress to get this to work. 
 define('DB_DRIVER', 'mysqli');
-define('DB_HOSTNAME', 'localhost');
-define('DB_USERNAME', 'root');
-define('DB_PASSWORD', '');
-define('DB_DATABASE', 'shop');
+define('DB_HOSTNAME', 'mi3-ss15.a2hosting.com');
+define('DB_USERNAME', 'sockucom_ocar936');
+define('DB_PASSWORD', 'sock4u2020');
+define('DB_DATABASE', 'sockucom_ocar936');
 define('DB_PORT', '3306');
 define('DB_PREFIX', 'oc_');
