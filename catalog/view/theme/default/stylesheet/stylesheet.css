@@ -791,14 +791,9 @@ h2.price {
 /*HomeS */
 /*CSS for cards */
 
-.zoom.card{
-	margin-bottom: 20px;
-}
-
 .zoom {
 	transition: transform .2s;
 	margin-top: 0px;
-	padding-bottom: 20px;
   }
   
   .zoom:hover {
@@ -824,6 +819,15 @@ h2.price {
 	  bottom: 0px;
 	  left: 0px;
 	  right: 0px;
+	  bottom: 25px;
+	  font-weight: 800;
+  		letter-spacing: 1px;
+  		font-family: arial;
+  		text-shadow: -1px -1px 0 white,
+     1px -1px 0 white,
+     -1px 1px 0 white,
+    	1px 1px 0 white;
+
   }
 
   .card-title > a{
@@ -888,7 +892,8 @@ h2.price {
 	margin-bottom: 15px;
 }
 
-#top-links .dropdown-menu>li>a{
+/*The elements in the dropdown lists in the header*/
+#top-links .dropdown-menu>li>a, #top .dropdown-menu > li > button{
 	color: black;
 }
 
