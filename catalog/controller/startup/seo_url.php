@@ -2,7 +2,8 @@
 class ControllerStartupSeoUrl extends Controller {
 	public function index() {
 		// Add rewrite to url class
-		if ($this->config->get('config_seo_url')) {
+		// Localy have turned on so links are correct
+		if ($this->config->get('config_seo_url') AND !$this->config->get('skip_seo_url')) {
 			$this->url->addRewrite($this);
 		}
 
