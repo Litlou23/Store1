@@ -6,6 +6,9 @@ $_['site_ssl']           = HTTPS_SERVER;
 // Url
 $_['url_autostart']      = false;
 
+//Local Seo Setting
+$_['skip_seo_url']      = false;
+
 // Database
 $_['db_autostart']       = true;
 $_['db_engine']          = DB_DRIVER; // mpdo, mssql, mysql, mysqli or postgre
