@@ -6,8 +6,8 @@ $_['site_ssl']           = HTTPS_SERVER;
 // Url
 $_['url_autostart']      = false;
 
-//Local Seo Setting
-$_['skip_seo_url']       = false;
+//Local Seo Setting 
+$_['skip_seo_url']       = true;
 
 // Database
 $_['db_autostart']       = true;
