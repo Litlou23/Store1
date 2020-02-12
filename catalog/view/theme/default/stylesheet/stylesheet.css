@@ -128,6 +128,24 @@ div.required .control-label:before {
 /* logo */
 #logo {
 	margin: 0 0 10px 0;
+	
+}
+
+.brandText {
+	padding: 200px 0px;
+}
+
+.brandText p{
+	width: 80%;
+	margin: auto;
+	font-size: medium;
+	color: black;
+	text-align: justify;
+	font-weight: 600;
+}
+
+.logo {
+	width: 100%;	
 }
 /* search */
 #search {
@@ -324,7 +342,7 @@ div.required .control-label:before {
 footer {
 	margin-top: 30px;
 	padding-top: 30px;
-	background-color: #303030;
+	background-color:black;
 	border-top: 1px solid #ddd;
 	color: #e2e2e2;
 }
