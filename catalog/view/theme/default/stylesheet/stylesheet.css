@@ -9,6 +9,7 @@ body {
 }
 h1, h2, h3, h4, h5, h6 {
 	color: #444;
+	margin: 0px;
 }
 /* default font size */
 .fa {
@@ -127,6 +128,24 @@ div.required .control-label:before {
 /* logo */
 #logo {
 	margin: 0 0 10px 0;
+	
+}
+
+.brandText {
+	padding: 200px 0px;
+}
+
+.brandText p{
+	width: 80%;
+	margin: auto;
+	font-size: medium;
+	color: black;
+	text-align: justify;
+	font-weight: 600;
+}
+
+.logo {
+	width: 100%;	
 }
 /* search */
 #search {
@@ -191,9 +210,20 @@ div.required .control-label:before {
 	margin: 20px 0;
 }
 /* menu */
+.navbar .nav, .navbar .nav > li {
+    float:none;
+    display:inline-block;
+    *display:inline;
+    /* ie7 fix */
+    *zoom:1;
+    /* hasLayout ie7 trigger */
+    vertical-align: top;
+}
 #menu {
 	min-height: 40px;
 	letter-spacing: 2px;
+	text-align:center;
+
 }
 #menu .nav > li > a {
 	color:black;
@@ -312,7 +342,7 @@ div.required .control-label:before {
 footer {
 	margin-top: 30px;
 	padding-top: 30px;
-	background-color: #303030;
+	background-color:black;
 	border-top: 1px solid #ddd;
 	color: #e2e2e2;
 }
@@ -529,11 +559,6 @@ footer h5 {
 	}
 	}
 
-.filter
-{
-margin-top: 20px;
-}
-
 .filter .input-group
 {
 	width: 50%;
@@ -575,6 +600,8 @@ margin-top: 20px;
 .product-thumb .image img {
 	margin-left: auto;
 	margin-right: auto;
+	height: 100%;
+	width: 100%;
 }
 .product-grid .product-thumb .image {
 	float: none;
