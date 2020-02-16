@@ -58,13 +58,9 @@
     {{ language }}
     <div id="top-links" class="nav pull-right">
       <ul class="list-inline">
-        <li>
-          <a href="{{ contact }}"><i class="fa fa-phone"></i></a>
-          <span class="hidden-xs hidden-sm hidden-md">{{ telephone }}</span>
-        </li>
         <li class="dropdown">
           <a href="{{ account }}" title="{{ text_account }}" class="dropdown-toggle" data-toggle="dropdown">
-          <span class="hidden-xs hidden-sm hidden-md">{{ text_account }}</span>
+          <span>{{ text_account }}</span>
           <a></a>
           <ul class="dropdown-menu dropdown-menu-right">
             {% if logged %}
@@ -78,6 +74,10 @@
             <li><a href="{{ login }}">{{ text_login }}</a></li>
             {% endif %}
           </ul>
+        </li>
+        <li>
+          <a href="{{ contact }}"><i class="fa fa-phone"></i></a>
+          <span class="hidden-xs hidden-sm hidden-md">{{ telephone }}</span>
         </li>
         <li><a href="{{ wishlist }}" id="wishlist-total" title="{{ text_wishlist }}"><i class="fa fa-heart"></i> <span class="hidden-xs hidden-sm hidden-md">{{ text_wishlist }}</span></a></li>
         <li><a href="{{ shopping_cart }}" title="{{ text_shopping_cart }}"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">{{ text_shopping_cart }}</span></a></li>

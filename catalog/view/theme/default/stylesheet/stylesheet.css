@@ -131,8 +131,16 @@ div.required .control-label:before {
 	
 }
 
-.brandText {
-	padding: 200px 0px;
+@media (min-width: 992px){
+	.brandText  {
+		padding: 200px 0px;
+	}	
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+	.brandText  {
+		padding: 20px 0px;
+	}	
 }
 
 .brandText p{
@@ -334,10 +342,7 @@ div.required .control-label:before {
 		color: #fff;
 	}
 }
-/* content */
-#content {
-	min-height: 600px;
-}
+
 /* footer */
 footer {
 	margin-top: 30px;
@@ -824,9 +829,9 @@ h2.price {
   }
   
   .zoom:hover {
-	-ms-transform: scale(1.5); /* IE 9 */
-	-webkit-transform: scale(1.5); /* Safari 3-8 */
-	transform: scale(1.5); 
+	-ms-transform: scale(1.2); /* IE 9 */
+	-webkit-transform: scale(1.2); /* Safari 3-8 */
+	transform: scale(1.2); 
 	z-index: 500;
   }
 
@@ -926,4 +931,9 @@ h2.price {
 
 .slick-list img{
 	max-width: 100%;
+}
+
+#homepage-desktop-ad{
+	position: absolute;
+	right: 50px; 
 }

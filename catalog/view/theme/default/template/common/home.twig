@@ -1,40 +1,35 @@
 {{ header }}
 <div id="common-home" class="container">
-	<div class="row">
-		<div id="content" class="col-md-10">
-			<div class="card-deck">
-				{% for category in categories %}
-					{% if category.children %}
-						{% for child in category.children %}
-							<div class="card zoom">
-								<a href='{{ child.href }}'>
-									<img src="http://{{domain}}/image/{{child['image']}}" class="card-img-top" alt="...">
-									<div class="card-img-overlay">
-										<h5 class="card-title">
-											{{child['name']}}
-										</h5>
-									</div>
-								</a>
-							</div>
-						{% endfor %}
-					{% endif %}
-					<div class="card zoom">
-						<a href='{{ category.href }}'>
-							<img src="http://{{domain}}/image/{{category['image']}}" class="card-img-top" alt="...">
-							<div class="card-img-overlay">
-								<h5 class="card-title">
-									{{category['name']}}
-								</h5>
-							</div>
-						</a>
-					</div>
-				{% endfor %}
-			</div>
-		</div>
-		<div class="col-md-2 hidden-xs hidden-sm">
-			<script data-cfasync='false' type='text/javascript' src='//p382757.clksite.com/adServe/banners?tid=382757_751335_0'></script>
-		</div>
-	</div>
+
+  <div class="row">
+    <div id="content" class="col-md-10 col-md-offset-1">
+      <div class="card-deck">
+      {% for category in categories %}
+        {% if category.children %}
+          {% for child in category.children %}
+            <div class="card zoom">
+              <a href='{{ child.href }}'>
+                <img src="http://{{domain}}/image/{{child['image']}}" class="card-img-top" alt="...">
+                <div class="card-img-overlay">
+                  <h5 class="card-title"> {{child['name']}} </h5>
+                </div>
+              </a>
+            </div>
+          {% endfor %}
+        {% endif %}
+        <div class="card zoom">
+          <a href='{{ category.href }}'>
+          <img src="http://{{domain}}/image/{{category['image']}}" class="card-img-top" alt="...">
+           <div class="card-img-overlay">
+             <h5 class="card-title"> {{category['name']}}</h5>
+           </div>
+          </a>
+        </div>
+      {% endfor %}
+      </div>
+    </div>
+    <div id="homepage-desktop-ad" class="hidden-xs hidden-sm"><script data-cfasync='false' type='text/javascript' src='//p382757.clksite.com/adServe/banners?tid=382757_751335_0'></script></div>
+  </div>
 
 	<div class="row">
 		<div class="col-md-6">
@@ -45,6 +40,6 @@
 			Our mission is to grow site the along with everyone of our customers and fellow creators. To all young creatives and entrepreneurs this website was created with you in mind, so that we could create a vision together. We are building this work directly with creators and to express our own creativity through this site because there is never too many places for your product to be sold.</p>
 		</div>
 	</div>
-</div>
+</div>  
 {{ footer }}
 
