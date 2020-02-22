@@ -193,3 +193,14 @@
 2019-12-13 2:39:03 - PHP Warning:  mysqli::query(): Error reading result set's header in C:\xampp\htdocs\upload\system\library\db\mysqli.php on line 18
 2019-12-13 2:39:14 - PHP Warning:  mysqli::query(): MySQL server has gone away in C:\xampp\htdocs\upload\system\library\db\mysqli.php on line 18
 2019-12-13 2:39:14 - PHP Warning:  mysqli::query(): Error reading result set's header in C:\xampp\htdocs\upload\system\library\db\mysqli.php on line 18
+2020-02-19 5:43:47 - PHP Warning:  unlink(C:/xampp/htdocs/upload/system/storage/cache/cache.catalog.language.1582094589): Permission denied in C:\xampp\htdocs\upload\system\library\cache\file.php on line 68
+2020-02-21 2:37:23 - PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'sockucom_ocar936'@'pool-108-36-227-50.phlapa.fios.verizon.net' (using password: YES) in C:\xampp\htdocs\upload\system\library\db\mysqli.php on line 7
+2020-02-21 2:37:23 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\upload\system\library\db\mysqli.php on line 10
+2020-02-21 2:37:23 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\upload\system\library\db\mysqli.php on line 10
+2020-02-21 3:04:23 - PHP Warning:  fopen(C:/xampp/htdocs/upload/system/storage/cache/cache.catalog.language.1582257863): failed to open stream: Permission denied in C:\xampp\htdocs\upload\system\library\cache\file.php on line 49
+2020-02-21 3:04:23 - PHP Warning:  flock() expects parameter 1 to be resource, bool given in C:\xampp\htdocs\upload\system\library\cache\file.php on line 51
+2020-02-21 3:04:23 - PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in C:\xampp\htdocs\upload\system\library\cache\file.php on line 53
+2020-02-21 3:04:23 - PHP Warning:  fflush() expects parameter 1 to be resource, bool given in C:\xampp\htdocs\upload\system\library\cache\file.php on line 55
+2020-02-21 3:04:23 - PHP Warning:  flock() expects parameter 1 to be resource, bool given in C:\xampp\htdocs\upload\system\library\cache\file.php on line 57
+2020-02-21 3:04:23 - PHP Warning:  fclose() expects parameter 1 to be resource, bool given in C:\xampp\htdocs\upload\system\library\cache\file.php on line 59
+2020-02-21 3:05:49 - PHP Warning:  unlink(C:/xampp/htdocs/upload/system/storage/cache/cache.catalog.language.1582257929): No such file or directory in C:\xampp\htdocs\upload\system\library\cache\file.php on line 68
