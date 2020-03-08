@@ -1,4 +1,5 @@
 <?php
+
 class ControllerCheckoutConfirm extends Controller {
 	public function index() {
 		$redirect = '';
@@ -25,7 +26,8 @@ class ControllerCheckoutConfirm extends Controller {
 		}
 
 		// Validate if payment method has been set.
-		if (!isset($this->session->data['payment_method'])) {
+		if (!(isset($_POST['payment_method']) && !empty($_POST['payment_method'])))
+		{
 			$redirect = $this->url->link('checkout/checkout', '', true);
 		}
 
@@ -407,7 +409,7 @@ class ControllerCheckoutConfirm extends Controller {
 				);
 			}
 
-			$data['payment'] = $this->load->controller('extension/payment/' . $this->session->data['payment_method']['code']);
+			$data['payment'] = $this->load->controller('extension/payment/' . $this->session->data['payment_method']['code']);	
 		} else {
 			$data['redirect'] = $redirect;
 		}
