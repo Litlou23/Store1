@@ -93,6 +93,7 @@ function getConfirmPaymentDiv(){
                     {
                         payment_method: $("#payment_method").val(),
                         stripeToken: $("#stripeToken").val(),
+                        backupClientSecret: $("#backupClientSecret").val(),
                     },
                     method: "POST",
                     success: function(html) {
