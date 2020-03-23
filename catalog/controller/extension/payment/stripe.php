@@ -7,11 +7,13 @@ class ControllerExtensionPaymentStripe extends Controller {
 	public function index() {
         $order_info = $this->model_checkout_order->getOrder($this->session->data['order_id']);
 
-		$data = $this->charge($this->currency->convert($order_info['total'], 'USD', $this->session->data['currency']), $_POST['stripeToken'], $_POST['backupClientSecret']);
+		$description = $order_info['shipping_firstname'] . ' ' . $order_info['shipping_firstname'] . ' Order ID: ' . $this->session->data['order_id'];
+
+		$data = $this->charge($this->currency->convert($order_info['total'], 'USD', $this->session->data['currency']), $_POST['stripeToken'], $_POST['backupClientSecret'], $order_info['email'], $description);
         return $this->load->view('extension/payment/stripe', $data);
     }
 
-	public function charge($amount, $paymentMethodID, $backupClientSecret){
+	public function charge($amount, $paymentMethodID, $backupClientSecret, $email, $description){
 		$returnInfo = array();
 		try {
 			// Use Stripe's library to make requests...
@@ -23,7 +25,9 @@ class ControllerExtensionPaymentStripe extends Controller {
 			$paymentIntent = \Stripe\PaymentIntent::create([
 				'amount' => $amount * 100,
 				'currency' => $this->session->data['currency'],
-				'payment_method' => $paymentMethodID
+				'payment_method' => $paymentMethodID,
+				'receipt_email' => $email,
+				'description' => $description
 			]);
 
 			$returnInfo['client_secret'] = $paymentIntent->id; 
