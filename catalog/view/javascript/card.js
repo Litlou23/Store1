@@ -21,17 +21,34 @@ var style = {
         iconColor: '#fa755a'
     }
 };
- 
-// Create an instance of the card Element.
-var card = elements.create('card', {style: style});
- 
+
+var elementClasses = {
+    focus: 'focus',
+    empty: 'empty',
+    invalid: 'invalid',
+  };
+
 // Add an instance of the card Element into the `card-element` <div>.
-$( document ).ready(function() {
-card.mount('#card-element');
-});
+    var cardNumber = elements.create('cardNumber', {
+        style: style,
+        classes: elementClasses,
+      });
+      cardNumber.mount('#card-number');
+    
+      var cardExpiry = elements.create('cardExpiry', {
+        style: style,
+        classes: elementClasses,
+      });
+      cardExpiry.mount('#card-expiry');
+    
+      var cardCvc = elements.create('cardCvc', {
+        style: style,
+        classes: elementClasses,
+      });
+      cardCvc.mount('#card-cvc');
  
 // Handle real-time validation errors from the card Element.
-card.addEventListener('change', function(event) {
+cardNumber.addEventListener('change', function(event) {
     var displayError = document.getElementById('card-errors');
     if (event.error) {
         displayError.textContent = event.error.message;
@@ -43,20 +60,36 @@ card.addEventListener('change', function(event) {
 // Handle form submission.
 var paymentMethodDiv = document.getElementById('payment-method-form');
 function submitCreditCardInfo() {
-    stripe.createPaymentMethod(
-        {
-            type: 'card',
-            card: card,
-        }).then(function(result) {
-        if (result.error) {
-            // Inform the user if there was an error.
-            var errorElement = document.getElementById('card-errors');
-            errorElement.textContent = result.error.message;
-        } else {
-            // Send the token to your server.
-            stripeTokenHandler(result.paymentMethod);
-        }
-    });
+    var postalCode = document.getElementById('postal-code').value;
+
+    if(!postalCode){
+        //Inform the user they need to insert their zip code
+        var errorElement = document.getElementById('card-errors');
+        errorElement.textContent = "Zip/Postal Code required for this transaction";
+    }
+    else{
+        var cardData = { 
+            address :
+            {
+                postal_code: postalCode
+            }
+          };
+        stripe.createPaymentMethod(
+            {
+                type: 'card',
+                card: cardNumber,
+                billing_details: cardData
+            }).then(function(result) {
+            if (result.error) {
+                // Inform the user if there was an error.
+                var errorElement = document.getElementById('card-errors');
+                errorElement.textContent = result.error.message;
+            } else {
+                // Send the token to your server.
+                stripeTokenHandler(result.paymentMethod);
+            }
+        });
+    }
 }
  
 // Submit the form with the token ID.
