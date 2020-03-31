@@ -38,4 +38,7 @@ define('DB_PASSWORD', 'sock4u2020');
 define('DB_DATABASE', 'sockucom_ocar936');
 define('DB_PORT', '3306');
 define('DB_PREFIX', 'oc_');
+
+//PAYMENT PROCESS VALUES
 define('STRIPE_KEY', 'sk_test_6RXiAQuXpmFJ1iOyAjbkam4M00kG8xhfwU');
+define('SHOW_PAYMENT_METHOD', 'N');

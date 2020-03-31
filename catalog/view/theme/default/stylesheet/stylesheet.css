@@ -970,7 +970,7 @@ h2.price {
 /* Give the postal code input on the payment method form the same styling as the stripe inputs */
 #postal-code{
 	width: 400px;
-	color: '#32325d';
-	font-family: '"Helvetica Neue", Helvetica, sans-serif';
-	font-size: '16px';
+	color: #32325d;
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 16px;
 }
