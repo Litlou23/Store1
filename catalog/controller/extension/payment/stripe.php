@@ -9,7 +9,7 @@ class ControllerExtensionPaymentStripe extends Controller {
 
 		$description = $order_info['shipping_firstname'] . ' ' . $order_info['shipping_firstname'] . ' Order ID: ' . $this->session->data['order_id'];
 
-		$data = $this->charge($this->currency->convert($order_info['total'], 'USD', $this->session->data['currency']), $_POST['stripeToken'], $_POST['backupClientSecret'], $order_info['email'], $description);
+		$data = $this->charge($this->currency->convert($order_info['total'], 'USD', $this->session->data['currency']), $_POST['stripeToken'], $_POST['backupClientSecret'] ?? '', $order_info['email'], $description);
         return $this->load->view('extension/payment/stripe', $data);
     }
 
@@ -19,7 +19,7 @@ class ControllerExtensionPaymentStripe extends Controller {
 			// Use Stripe's library to make requests...
 			// Set your secret key. Remember to switch to your live secret key in production!
 			// See your keys here: https://dashboard.stripe.com/account/apikeys
-			\Stripe\Stripe::setApiKey('sk_test_6RXiAQuXpmFJ1iOyAjbkam4M00kG8xhfwU');
+			\Stripe\Stripe::setApiKey(STRIPE_KEY);
 
 			//Multiplying amount by 100 to convert to decimal
 			$paymentIntent = \Stripe\PaymentIntent::create([
@@ -74,7 +74,7 @@ class ControllerExtensionPaymentStripe extends Controller {
 		if ($this->session->data['payment_method']['code'] == 'stripe') {
 			$this->load->model('checkout/order');
 
-			\Stripe\Stripe::setApiKey('sk_test_6RXiAQuXpmFJ1iOyAjbkam4M00kG8xhfwU');
+			\Stripe\Stripe::setApiKey(STRIPE_KEY);
 
 			try{
 			// To create a PaymentIntent for confirmation, see our guide at: https://stripe.com/docs/payments/payment-intents/creating-payment-intents#creating-for-automatic
