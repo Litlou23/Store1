@@ -868,7 +868,7 @@ h2.price {
 
   /*Limit the number of cards that appear on a single row so that there aren't 20 on 1 row*/
   .card-deck .card{
-	flex: 1 0 30%;
+	flex: 1 0 45%;
   }
 
   /* Fixing height for certain input fields */
