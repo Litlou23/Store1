@@ -128,7 +128,7 @@ div.required .control-label:before {
 /* logo */
 #logo {
 	margin: 0 0 10px 0;
-	
+	width: 100px;
 }
 
 @media (min-width: 992px){
