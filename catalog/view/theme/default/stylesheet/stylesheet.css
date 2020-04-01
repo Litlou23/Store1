@@ -128,7 +128,7 @@ div.required .control-label:before {
 /* logo */
 #logo {
 	margin: 0 0 10px 0;
-	
+	width: 100px;
 }
 
 @media (min-width: 992px){
@@ -868,7 +868,7 @@ h2.price {
 
   /*Limit the number of cards that appear on a single row so that there aren't 20 on 1 row*/
   .card-deck .card{
-	flex: 1 0 30%;
+	flex: 1 0 45%;
   }
 
   /* Fixing height for certain input fields */
@@ -936,4 +936,41 @@ h2.price {
 #homepage-desktop-ad{
 	position: absolute;
 	right: 50px; 
+}
+
+/* Stripe element */
+.StripeElement {
+    box-sizing: border-box;
+   
+    padding: 10px 12px;
+   
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: white;
+   
+    box-shadow: 0 1px 3px 0 #e6ebf1;
+    -webkit-transition: box-shadow 150ms ease;
+	transition: box-shadow 150ms ease;
+
+	max-width: 400px;
+}
+ 
+.StripeElement--focus {
+    box-shadow: 0 1px 3px 0 #cfd7df;
+}
+ 
+.StripeElement--invalid {
+    border-color: #fa755a;
+}
+ 
+.StripeElement--webkit-autofill {
+    background-color: #fefde5 !important;
+}
+
+/* Give the postal code input on the payment method form the same styling as the stripe inputs */
+#postal-code{
+	width: 400px;
+	color: #32325d;
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 16px;
 }

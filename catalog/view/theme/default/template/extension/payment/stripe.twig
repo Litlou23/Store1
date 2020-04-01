@@ -1,0 +1,10 @@
+{% if error %}
+    <div class="alert alert-danger alert-dismissible">
+        {{error}}
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+    </div>
+{% else %}
+    <a class="btn btn-primary pull-right" href="index.php?route=extension/payment/stripe/confirm&client_code={{client_secret}}">Complete Purchase</a>
+{% endif %}
+
+<input type="hidden" id="backupClientSecret" name="backupClientSecret" value="{{client_secret}}" />

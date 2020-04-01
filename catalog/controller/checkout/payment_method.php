@@ -121,7 +121,9 @@ class ControllerCheckoutPaymentMethod extends Controller {
 			$data['agree'] = '';
 		}
 
-		$this->response->setOutput($this->load->view('checkout/payment_method', $data));
+		if(SHOW_PAYMENT_METHOD == 'Y'){
+			$this->response->setOutput($this->load->view('checkout/payment_method', $data));
+		}
 	}
 
 	public function save() {
@@ -177,7 +179,7 @@ class ControllerCheckoutPaymentMethod extends Controller {
 		if (!$json) {
 			$this->session->data['payment_method'] = $this->session->data['payment_methods'][$this->request->post['payment_method']];
 
-			$this->session->data['comment'] = strip_tags($this->request->post['comment']);
+			$this->session->data['comment'] = strip_tags($this->request->post['comment'] ?? '');
 		}
 
 		$this->response->addHeader('Content-Type: application/json');
