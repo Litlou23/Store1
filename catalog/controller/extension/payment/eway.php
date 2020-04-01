@@ -299,5 +299,4 @@ class ControllerExtensionPaymentEway extends Controller {
 			}
 		}
 	}
-
 }
